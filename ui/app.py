@@ -52,12 +52,12 @@ st.set_page_config(
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap');
-    
+
     /* Global Styles - Red Hat Brand Theme */
     .stApp {
         font-family: 'Red Hat Display', 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
         /* Red Hat dark background */
-        background: 
+        background:
             radial-gradient(ellipse at 20% 0%, rgba(238, 0, 0, 0.05) 0%, transparent 50%),
             radial-gradient(ellipse at 80% 100%, rgba(238, 0, 0, 0.03) 0%, transparent 50%),
             linear-gradient(180deg, #0c0c0c 0%, #151515 25%, #1a1a1a 50%, #151515 75%, #0c0c0c 100%);
@@ -67,7 +67,7 @@ st.markdown("""
         line-height: 1.7;
         letter-spacing: -0.01em;
     }
-    
+
     /* Keyframe Animations - Subtle, Professional */
     @keyframes float {
         0%, 100% { transform: translateY(0px); }
@@ -102,7 +102,7 @@ st.markdown("""
         0%, 100% { border-color: rgba(99, 102, 241, 0.3); }
         50% { border-color: rgba(99, 102, 241, 0.6); }
     }
-    
+
     /* Corporate Color Palette - Red Hat Brand */
     :root {
         --bg-primary: #0c0c0c;
@@ -133,7 +133,7 @@ st.markdown("""
         --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
         --shadow-glow: 0 0 40px rgba(238, 0, 0, 0.1);
     }
-    
+
     /* Hero Section - Red Hat Brand Design */
     .hero-container {
         background: linear-gradient(135deg, #151515 0%, #1a1a1a 50%, #151515 100%);
@@ -230,7 +230,7 @@ st.markdown("""
         transform: translateY(-3px);
         border-color: rgba(255,255,255,0.3);
     }
-    
+
     /* Stats Cards - HuggingFace Leaderboard Inspired */
     .stats-grid {
         display: grid;
@@ -305,7 +305,7 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
-    
+
     /* Editable Fields with Pencil Icons */
     .editable-field {
         display: flex;
@@ -428,7 +428,7 @@ st.markdown("""
     .leaderboard-table tr {
         height: 85px;
     }
-    
+
     /* Rank Badges - HuggingFace Style Medals */
     .rank-badge {
         width: 40px;
@@ -467,7 +467,7 @@ st.markdown("""
         background: linear-gradient(145deg, #6366f1, #8b5cf6);
         box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
     }
-    
+
     /* Score Bars - Corporate Enhanced Style */
     .score-mini-container {
         display: flex;
@@ -507,14 +507,14 @@ st.markdown("""
     .fill-latency { background: linear-gradient(90deg, #2563eb, #3b82f6); }
     .fill-cost { background: linear-gradient(90deg, #ea580c, #f97316); }
     .fill-capacity { background: linear-gradient(90deg, #7c3aed, #8b5cf6); }
-    
+
     /* Score label colors - Enhanced visibility */
     .label-accuracy { color: #f472b6; text-shadow: 0 0 12px rgba(244, 114, 182, 0.3); }
     .label-quality { color: #34d399; text-shadow: 0 0 12px rgba(16, 185, 129, 0.3); }
     .label-latency { color: #60a5fa; text-shadow: 0 0 12px rgba(59, 130, 246, 0.3); }
     .label-cost { color: #fb923c; text-shadow: 0 0 12px rgba(249, 115, 22, 0.3); }
     .label-capacity { color: #a78bfa; text-shadow: 0 0 12px rgba(139, 92, 246, 0.3); }
-    
+
     /* Model Card in Table - Corporate Typography */
     .model-cell {
         display: flex;
@@ -540,7 +540,7 @@ st.markdown("""
         font-weight: 500;
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    
+
     /* Enhanced Select Button - Corporate Style */
     .select-btn {
         background: linear-gradient(135deg, #6366f1, #8b5cf6);
@@ -559,7 +559,7 @@ st.markdown("""
         transform: translateY(-1px);
         box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
     }
-    
+
     /* Final Score Display - BIG and prominent */
     .final-score {
         font-size: 2rem;
@@ -573,7 +573,7 @@ st.markdown("""
         display: block;
         text-align: center;
     }
-    
+
     /* Enhanced table row spacing */
     .leaderboard-table tbody tr {
         border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -593,7 +593,7 @@ st.markdown("""
         color: rgba(255,255,255,0.5);
         font-weight: 600;
     }
-    
+
     /* Enhanced Slider Styling */
     .stSlider {
         padding: 0.5rem 0;
@@ -619,7 +619,7 @@ st.markdown("""
         color: white !important;
         font-weight: 600 !important;
     }
-    
+
     /* Pros/Cons Tags - Clean pill design like HuggingFace */
     .tag-container {
         display: flex;
@@ -656,14 +656,14 @@ st.markdown("""
         color: var(--text-secondary);
         border: 1px solid var(--border-default);
     }
-    
+
     /* Action Button - HuggingFace style rounded */
     .action-cell {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     /* Extraction Card - Clean, spacious design */
     .extraction-card {
         background: var(--bg-card);
@@ -715,7 +715,7 @@ st.markdown("""
         margin-top: 4px;
         font-family: 'Inter', sans-serif;
     }
-    
+
     /* SLO & Workload Cards - Clean, readable design */
     .slo-grid {
         display: grid;
@@ -817,7 +817,7 @@ st.markdown("""
     .slo-metric-warn {
         color: var(--accent-orange);
     }
-    
+
     /* Impact Visualization */
     .impact-container {
         background: rgba(255,255,255,0.02);
@@ -871,19 +871,19 @@ st.markdown("""
         min-width: 180px;
         text-align: right;
     }
-    .impact-positive { 
-        color: #38ef7d; 
+    .impact-positive {
+        color: #38ef7d;
         background: rgba(56, 239, 125, 0.1);
     }
-    .impact-negative { 
-        color: #f5576c; 
+    .impact-negative {
+        color: #f5576c;
         background: rgba(245, 87, 108, 0.1);
     }
-    .impact-neutral { 
-        color: rgba(255,255,255,0.7); 
+    .impact-neutral {
+        color: rgba(255,255,255,0.7);
         background: rgba(255,255,255,0.05);
     }
-    
+
     /* Priority Badges - Clean pill design with black background */
     .priority-badge {
         display: inline-flex;
@@ -905,7 +905,7 @@ st.markdown("""
     .priority-high_accuracy { background: #000000; color: white; }
     .priority-high_throughput { background: #000000; color: white; }
     .priority-balanced { background: #000000; color: white; }
-    
+
     /* Score Bars - Clean, readable with AA-style */
     .score-container {
         margin: 1.25rem 0;
@@ -936,7 +936,7 @@ st.markdown("""
     .score-bar-latency { background: linear-gradient(90deg, #3b82f6, var(--accent-blue)); }
     .score-bar-cost { background: linear-gradient(90deg, #f97316, var(--accent-orange)); }
     .score-bar-capacity { background: linear-gradient(90deg, #8b5cf6, var(--accent-purple)); }
-    
+
     /* Section Headers - Clean, modern */
     .section-header {
         display: flex;
@@ -955,7 +955,7 @@ st.markdown("""
     .section-header span:first-child {
         font-size: 2rem;
     }
-    
+
     /* Pipeline Steps - Clean card design */
     .pipeline-container {
         display: grid;
@@ -1013,7 +1013,7 @@ st.markdown("""
         border: 1px solid var(--border-default);
         margin: 2rem 0;
     }
-    
+
     /* Sidebar Styling - Clean dark theme matching main */
     section[data-testid="stSidebar"] {
         background: var(--bg-secondary) !important;
@@ -1040,7 +1040,7 @@ st.markdown("""
         font-weight: 700;
         margin-bottom: 1.25rem;
     }
-    
+
     /* Weight Bars - Clean design */
     .weight-item {
         margin: 1rem 0;
@@ -1079,20 +1079,20 @@ st.markdown("""
     .weight-fill-latency { background: linear-gradient(90deg, #3b82f6, var(--accent-blue)); }
     .weight-fill-cost { background: linear-gradient(90deg, #f97316, var(--accent-orange)); }
     .weight-fill-capacity { background: linear-gradient(90deg, #8b5cf6, var(--accent-purple)); }
-    
+
     /* Hide Streamlit defaults */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     .stDeployButton {display: none;}
-    
+
     /* Custom scrollbar */
     ::-webkit-scrollbar { width: 10px; height: 10px; }
     ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 5px; }
-    ::-webkit-scrollbar-thumb { 
-        background: linear-gradient(135deg, #667eea, #764ba2); 
-        border-radius: 5px; 
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border-radius: 5px;
     }
-    
+
     /* Tabs Styling - Red Hat Brand */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
@@ -1131,7 +1131,7 @@ st.markdown("""
     .stTabs [role="tablist"] > div:last-child {
         background-color: #EE0000 !important;
     }
-    
+
     /* Buttons - Red Hat Brand Style */
     .stButton > button {
         border-radius: 4px;
@@ -1161,7 +1161,7 @@ st.markdown("""
         background: #cc0000 !important;
         color: white !important;
     }
-    
+
     /* Number Input Styling - Clean design */
     .stNumberInput input {
         background: var(--bg-tertiary) !important;
@@ -1187,7 +1187,7 @@ st.markdown("""
     .stNumberInput button:hover {
         background: rgba(88, 166, 255, 0.2) !important;
     }
-    
+
     /* Enhanced Selectbox Styling */
     .stSelectbox > div > div {
         background: var(--bg-card) !important;
@@ -1197,7 +1197,7 @@ st.markdown("""
     .stSelectbox > div > div:hover {
         border-color: var(--accent-blue) !important;
     }
-    
+
     /* Enhanced Slider Styling */
     .stSlider > div > div > div {
         background: var(--bg-tertiary) !important;
@@ -1210,7 +1210,7 @@ st.markdown("""
         border: 3px solid var(--accent-blue) !important;
         box-shadow: 0 2px 8px rgba(88, 166, 255, 0.3) !important;
     }
-    
+
     /* Filter Panel Styling */
     .filter-panel {
         background: var(--bg-card);
@@ -1219,7 +1219,7 @@ st.markdown("""
         padding: 1.25rem;
         margin-bottom: 1.5rem;
     }
-    
+
     /* Metric Badges - Clean pill design */
     .metric-badge {
         display: inline-flex;
@@ -1254,7 +1254,7 @@ st.markdown("""
         color: var(--accent-purple);
         border: 1px solid rgba(163, 113, 247, 0.25);
     }
-    
+
     /* Progress Bar Styling - Red Hat Theme */
     .stProgress > div > div {
         background: linear-gradient(90deg, #EE0000, #CC0000, #EE0000) !important;
@@ -1264,7 +1264,7 @@ st.markdown("""
         background: #1a1a1a !important;
         border-radius: 8px;
     }
-    
+
     /* Spinner Styling - Red Hat Theme */
     .stSpinner > div {
         border-top-color: #EE0000 !important;
@@ -1276,7 +1276,7 @@ st.markdown("""
         color: #EE0000 !important;
         fill: #EE0000 !important;
     }
-    
+
     /* Info/Warning/Error Message Styling */
     .stAlert {
         border-radius: 12px !important;
@@ -1285,12 +1285,12 @@ st.markdown("""
     .stAlert > div {
         padding: 1.25rem 1.5rem !important;
     }
-    
+
     /* Caption Styling */
     .stCaption {
         color: var(--text-muted) !important;
     }
-    
+
     /* Text Area Focus Styling */
     .stTextArea textarea {
         background: var(--bg-card) !important;
@@ -1307,13 +1307,13 @@ st.markdown("""
     .stTextArea textarea::placeholder {
         color: var(--text-muted) !important;
     }
-    
+
     /* Disabled Button Styling */
     .stButton > button:disabled {
         opacity: 0.4;
         cursor: not-allowed;
     }
-    
+
     /* Smooth Page Transitions */
     .main .block-container {
         animation: fade-in 0.25s ease-out;
@@ -1324,7 +1324,7 @@ st.markdown("""
         from { opacity: 0; transform: translateY(8px); }
         to { opacity: 1; transform: translateY(0); }
     }
-    
+
     /* Better Tooltip Styling */
     [data-testid="stTooltipIcon"] {
         color: var(--text-muted) !important;
@@ -1332,18 +1332,18 @@ st.markdown("""
     [data-testid="stTooltipIcon"]:hover {
         color: var(--accent-blue) !important;
     }
-    
+
     /* Custom Scrollbar - Subtle */
     ::-webkit-scrollbar { width: 8px; height: 8px; }
     ::-webkit-scrollbar-track { background: var(--bg-secondary); border-radius: 4px; }
-    ::-webkit-scrollbar-thumb { 
-        background: var(--bg-tertiary); 
-        border-radius: 4px; 
+    ::-webkit-scrollbar-thumb {
+        background: var(--bg-tertiary);
+        border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
         background: var(--accent-blue);
     }
-    
+
     /* Legend for charts - AA inspired */
     .chart-legend {
         display: flex;
@@ -1471,7 +1471,7 @@ def format_use_case_name(use_case: str) -> str:
     # Fix common acronyms
     acronyms = {
         'Rag': 'RAG',
-        'Llm': 'LLM', 
+        'Llm': 'LLM',
         'Ai': 'AI',
         'Api': 'API',
         'Gpu': 'GPU',
@@ -1518,7 +1518,7 @@ def load_206_models() -> pd.DataFrame:
 @st.cache_data
 def load_slo_templates():
     """Load SLO templates for all 9 use cases.
-    
+
     DEFAULTS ARE SET TO MIDDLE OF RESEARCH-BASED RANGES
     This ensures default values show GREEN (within range).
     """
@@ -1560,19 +1560,19 @@ def get_benchmark_ranges_for_token_config(prompt_tokens: int, output_tokens: int
         json_path = DATA_DIR / "benchmarks_redhat_performance.json"
         with open(json_path, 'r') as f:
             data = json.load(f)
-        
+
         benchmarks = data.get("benchmarks", [])
-        
+
         # Filter by token config
-        matching = [b for b in benchmarks 
+        matching = [b for b in benchmarks
                     if b.get('prompt_tokens') == prompt_tokens and b.get('output_tokens') == output_tokens]
-        
+
         if not matching:
             return {"config_count": 0}
-        
+
         # Calculate min/max for each percentile
         result = {"config_count": len(matching)}
-        
+
         for percentile in ['mean', 'p90', 'p95', 'p99']:
             for metric in ['ttft', 'itl', 'e2e']:
                 key = f"{metric}_{percentile}"
@@ -1583,12 +1583,12 @@ def get_benchmark_ranges_for_token_config(prompt_tokens: int, output_tokens: int
                 else:
                     result[f"{key}_min"] = 0
                     result[f"{key}_max"] = 0
-        
+
         return result
     except Exception:
         return {"config_count": 0}
 
-@st.cache_data  
+@st.cache_data
 def load_research_workload_patterns():
     """Load research-backed workload patterns from JSON file (includes benchmark data)."""
     try:
@@ -1615,24 +1615,24 @@ def get_benchmark_for_config(prompt_tokens: int, output_tokens: int, hardware: s
     benchmark_data = load_performance_benchmarks()
     if not benchmark_data or 'benchmarks' not in benchmark_data:
         return None
-    
+
     benchmarks = benchmark_data['benchmarks']
-    
+
     # Filter by token config
-    matching = [b for b in benchmarks 
+    matching = [b for b in benchmarks
                 if b['prompt_tokens'] == prompt_tokens and b['output_tokens'] == output_tokens]
-    
+
     # Further filter by hardware if specified
     if hardware and matching:
         hw_filtered = [b for b in matching if hardware.upper() in b['hardware'].upper()]
         if hw_filtered:
             matching = hw_filtered
-    
+
     return matching if matching else None
 
 def get_slo_targets_for_use_case(use_case: str, priority: str = "balanced") -> dict:
     """Get research-backed SLO targets (min/max) for a use case with priority adjustment.
-    
+
     Returns dict with:
     - ttft_target: {"min": X, "max": Y} - the acceptable range
     - itl_target: {"min": X, "max": Y}
@@ -1642,20 +1642,20 @@ def get_slo_targets_for_use_case(use_case: str, priority: str = "balanced") -> d
     research_data = load_research_slo_ranges()
     if not research_data:
         return None
-    
+
     slo_ranges = research_data.get('slo_ranges', {})
     priority_adjustments = research_data.get('priority_adjustments', {})
-    
+
     use_case_data = slo_ranges.get(use_case)
     if not use_case_data:
         return None
-    
+
     # Get priority adjustment factors
     priority_factor = priority_adjustments.get(priority, {})
     ttft_factor = priority_factor.get('ttft_factor', 1.0)
     itl_factor = priority_factor.get('itl_factor', 1.0)
     e2e_factor = priority_factor.get('e2e_factor', 1.0)
-    
+
     return {
         "use_case": use_case,
         "priority": priority,
@@ -1681,34 +1681,34 @@ def get_slo_targets_for_use_case(use_case: str, priority: str = "balanced") -> d
 
 def calculate_slo_defaults_from_research(use_case: str, priority: str = "balanced") -> dict:
     """Calculate SLO DEFAULT values as the MAX of the priority-adjusted research range.
-    
+
     Using MAX as default ensures:
     - User sees ALL models that meet acceptable performance (more options)
     - User can then tighten SLOs to filter down if needed
     - All shown models are still within research-backed acceptable ranges
-    
+
     Models will be filtered to only those meeting these SLO targets from benchmark data.
-    
+
     Returns:
         dict with ttft, itl, e2e, qps defaults (integers)
     """
     slo_targets = get_slo_targets_for_use_case(use_case, priority)
-    
+
     if not slo_targets:
         # Fallback to static defaults if research data unavailable
         templates = load_slo_templates()
         return templates.get(use_case, {"ttft": 200, "itl": 30, "e2e": 3000, "qps": 50})
-    
+
     # Use MAX of the adjusted range for each SLO (shows more models by default)
     # User can tighten these values to filter down to fewer/better options
     ttft_default = slo_targets["ttft_target"]["max"]
     itl_default = slo_targets["itl_target"]["max"]
     e2e_default = slo_targets["e2e_target"]["max"]
-    
+
     # QPS based on use case defaults
     templates = load_slo_templates()
     qps_default = templates.get(use_case, {}).get("qps", 50)
-    
+
     return {
         "ttft": ttft_default,
         "itl": itl_default,
@@ -1726,39 +1726,39 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
 
     DEPRECATED: This function is kept for potential future use. The UI now uses
     the backend API via fetch_ranked_recommendations() instead.
-    
+
     Logic:
     - cost_saving: Find CHEAPEST hardware that meets MAX SLO (slowest acceptable)
     - low_latency: Find hardware that meets MIN SLO (fastest required)
     - balanced: Find hardware that meets MEAN of SLO range
     - high_accuracy: Relax latency, focus on larger models
     - high_throughput: Focus on tokens/sec capacity
-    
+
     Returns hardware recommendation with benchmark data.
     """
     # Get SLO targets
     slo_targets = get_slo_targets_for_use_case(use_case, priority)
     if not slo_targets:
         return None
-    
+
     # Get token config
     prompt_tokens = slo_targets['token_config']['prompt']
     output_tokens = slo_targets['token_config']['output']
-    
+
     # Load performance benchmarks
     benchmark_data = load_performance_benchmarks()
     if not benchmark_data or 'benchmarks' not in benchmark_data:
         return None
-    
+
     benchmarks = benchmark_data['benchmarks']
-    
+
     # Filter by token config
-    matching = [b for b in benchmarks 
+    matching = [b for b in benchmarks
                 if b['prompt_tokens'] == prompt_tokens and b['output_tokens'] == output_tokens]
-    
+
     if not matching:
         return None
-    
+
     # Define hardware costs (approximate monthly cost)
     # Both H100 and A100-80 are REAL benchmarks from Andre's data
     hardware_costs = {
@@ -1770,7 +1770,7 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
         ("A100-80", 2): {"cost": 3200, "tier": 2},
         ("A100-80", 4): {"cost": 6400, "tier": 3},
     }
-    
+
     # Determine target SLO based on priority
     if priority == "cost_saving":
         # Target MAX SLO (slowest acceptable) to use cheapest hardware
@@ -1792,7 +1792,7 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
         target_ttft = (slo_targets['ttft_target']['min'] + slo_targets['ttft_target']['max']) // 2
         target_e2e = (slo_targets['e2e_target']['min'] + slo_targets['e2e_target']['max']) // 2
         sort_by = "balanced"
-    
+
     # Group benchmarks by hardware config
     hw_benchmarks = {}
     for b in matching:
@@ -1800,26 +1800,26 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
         if hw_key not in hw_benchmarks:
             hw_benchmarks[hw_key] = []
         hw_benchmarks[hw_key].append(b)
-    
+
     # Evaluate each hardware option
     viable_options = []
     for hw_key, benches in hw_benchmarks.items():
         # Get best benchmark (lowest TTFT at reasonable RPS)
         best = min(benches, key=lambda x: x['ttft_mean'])
-        
+
         hw_cost = hardware_costs.get(hw_key, {"cost": 99999, "tier": 99})
-        
+
         # Check if meets SLO requirements
         meets_ttft = best['ttft_p95'] <= target_ttft * 1.2  # 20% buffer
         meets_e2e = best['e2e_p95'] <= target_e2e * 1.2
-        
+
         # Don't recommend hardware that's WAY faster than needed (over-provisioning)
         too_fast = False
         if priority == "cost_saving":
             # If TTFT is less than 50% of max, it's over-provisioned
             if best['ttft_mean'] < slo_targets['ttft_target']['max'] * 0.3:
                 too_fast = True
-        
+
         viable_options.append({
             "hardware": hw_key[0],
             "hardware_count": hw_key[1],
@@ -1836,14 +1836,14 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
             "benchmark_count": len(benches),
             "model_repo": best['model_hf_repo'],
         })
-    
+
     # Filter to only viable options (meets SLO)
     viable = [v for v in viable_options if v['meets_slo']]
-    
+
     # If no viable options, return best available
     if not viable:
         viable = viable_options
-    
+
     # Sort based on priority
     if sort_by == "cost":
         # For cost_saving: prefer cheapest that meets SLO, not over-provisioned
@@ -1856,13 +1856,13 @@ def recommend_optimal_hardware(use_case: str, priority: str, user_hardware: str 
     else:  # balanced
         # Balance cost and latency
         viable.sort(key=lambda x: (x['tier'], x['ttft_mean']))
-    
+
     if not viable:
         return None
-    
+
     best_option = viable[0]
     alternatives = viable[1:4] if len(viable) > 1 else []
-    
+
     return {
         "recommended": best_option,
         "alternatives": alternatives,
@@ -1881,7 +1881,7 @@ def _get_hardware_selection_reason(priority: str, hw_option: dict, slo_targets: 
     cost = hw_option['cost_monthly']
     target_max = slo_targets['ttft_target']['max']
     target_min = slo_targets['ttft_target']['min']
-    
+
     if priority == "cost_saving":
         return f"{hw_name} is the cheapest option (${cost:,}/mo) that meets your SLO max ({target_max}ms TTFT). Actual TTFT: {ttft:.0f}ms - good value!"
     elif priority == "low_latency":
@@ -2200,7 +2200,7 @@ def render_ranked_recommendations(response: dict, show_config: bool = True):
     # Get selected percentile for table display
     selected_percentile = st.session_state.get('slo_percentile', 'p95')
     percentile_label = selected_percentile.upper() if selected_percentile != 'mean' else 'Mean'
-    
+
     # Helper function to build a table row from a recommendation
     def build_row(rec: dict, cat_color: str, cat_name: str = "", cat_emoji: str = "", is_top: bool = False, more_count: int = 0) -> str:
         model_name = rec.get("model_name", "Unknown")
@@ -2354,10 +2354,10 @@ def render_ranked_recommendations(response: dict, show_config: bool = True):
 
 def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") -> dict:
     """Get REAL benchmark SLO data for a specific model and use case.
-    
+
     IMPORTANT: Only returns data if we have ACTUAL benchmarks for this model.
     Returns None if no matching benchmark data exists (we don't fake data).
-    
+
     Benchmark dataset contains only these models:
     - qwen2.5-7b, llama-3.1-8b, llama-3.3-70b, phi-4
     - mistral-small-24b, mixtral-8x7b, granite-3.1-8b
@@ -2366,9 +2366,9 @@ def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") ->
     benchmark_data = load_performance_benchmarks()
     if not benchmark_data or 'benchmarks' not in benchmark_data:
         return None
-    
+
     benchmarks = benchmark_data['benchmarks']
-    
+
     # Map use case to token config
     token_configs = {
         "code_completion": (512, 256),
@@ -2381,9 +2381,9 @@ def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") ->
         "long_document_summarization": (10240, 1536),
         "research_legal_analysis": (10240, 1536),
     }
-    
+
     prompt_tokens, output_tokens = token_configs.get(use_case, (512, 256))
-    
+
     # STRICT mapping: Only map if we're confident it's the same model family
     # Key = pattern to find in recommended model name, Value = benchmark repo
     model_mapping = {
@@ -2403,47 +2403,47 @@ def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") ->
         "gpt-oss-120b": "openai/gpt-oss-120b",
         "gpt-oss-20b": "openai/gpt-oss-20b",
     }
-    
+
     # Find matching model in benchmark data - STRICT matching
     model_lower = model_name.lower()
     benchmark_model_repo = None
     is_exact_match = False
-    
+
     for key, repo in model_mapping.items():
         if key in model_lower:
             benchmark_model_repo = repo
             is_exact_match = True
             break
-    
+
     # If no exact match, return None - we don't want to show misleading data
     if not benchmark_model_repo:
         return None
-    
+
     # Filter benchmarks by token config
-    matching = [b for b in benchmarks 
-                if b['prompt_tokens'] == prompt_tokens 
+    matching = [b for b in benchmarks
+                if b['prompt_tokens'] == prompt_tokens
                 and b['output_tokens'] == output_tokens]
-    
+
     # MUST match the specific model - no fallbacks
     model_matches = [b for b in matching if b['model_hf_repo'] == benchmark_model_repo]
     if not model_matches:
         return None  # No benchmark data for this model
-    
+
     matching = model_matches
-    
+
     # Filter by hardware if specified
     if hardware:
         hw_matches = [b for b in matching if hardware.upper() in b['hardware'].upper()]
         if hw_matches:
             matching = hw_matches
-    
+
     if not matching:
         return None
-    
+
     # Get best benchmark (lowest E2E at reasonable RPS)
     matching.sort(key=lambda x: x['e2e_mean'])
     best = matching[0]
-    
+
     return {
         "model_repo": best['model_hf_repo'],
         "is_exact_match": is_exact_match,
@@ -2469,7 +2469,7 @@ def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") ->
         },
         "benchmark_samples": len(matching),
         "ranges": {
-            "ttft_range_ms": [round(min(b['ttft_mean'] for b in matching), 1), 
+            "ttft_range_ms": [round(min(b['ttft_mean'] for b in matching), 1),
                              round(max(b['ttft_mean'] for b in matching), 1)],
             "e2e_range_ms": [round(min(b['e2e_mean'] for b in matching), 0),
                            round(max(b['e2e_mean'] for b in matching), 0)],
@@ -2478,33 +2478,33 @@ def get_slo_for_model(model_name: str, use_case: str, hardware: str = "H100") ->
 
 def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, priority: str = "balanced") -> list:
     """Validate SLO values against RESEARCH-BASED ranges only.
-    
+
     Returns list of tuples: (icon, color, message, severity)
     - GREEN: within research range
     - RED: outside research range (too low or too high)
-    
+
     NOTE: Benchmark data is NOT used here - only in Recommendation tab
     """
     messages = []
     research_data = load_research_slo_ranges()
-    
+
     if not research_data or 'slo_ranges' not in research_data:
         return messages
-    
+
     slo_ranges = research_data.get('slo_ranges', {})
     priority_adjustments = research_data.get('priority_adjustments', {})
-    
+
     # Get use case specific ranges
     use_case_ranges = slo_ranges.get(use_case)
     if not use_case_ranges:
         return messages
-    
+
     # Get priority factor
     priority_factor = priority_adjustments.get(priority, {})
     ttft_factor = priority_factor.get('ttft_factor', 1.0)
     itl_factor = priority_factor.get('itl_factor', 1.0)
     e2e_factor = priority_factor.get('e2e_factor', 1.0)
-    
+
     # Adjust ranges based on priority (research-based)
     ttft_min = int(use_case_ranges['ttft_ms']['min'] * ttft_factor)
     ttft_max = int(use_case_ranges['ttft_ms']['max'] * ttft_factor)
@@ -2512,11 +2512,11 @@ def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, 
     itl_max = int(use_case_ranges['itl_ms']['max'] * itl_factor)
     e2e_min = int(use_case_ranges['e2e_ms']['min'] * e2e_factor)
     e2e_max = int(use_case_ranges['e2e_ms']['max'] * e2e_factor)
-    
+
     # TTFT validation - RESEARCH BASED ONLY
     if ttft < ttft_min:
         messages.append((
-            "🔴", "#ef4444", 
+            "🔴", "#ef4444",
             f"TTFT ({ttft}ms) is BELOW research min ({ttft_min}ms) - may be unrealistic",
             "error"
         ))
@@ -2532,7 +2532,7 @@ def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, 
             f"TTFT ({ttft}ms) - within research range ({ttft_min}-{ttft_max}ms)",
             "success"
         ))
-    
+
     # ITL validation - RESEARCH BASED ONLY
     if itl < itl_min:
         messages.append((
@@ -2552,7 +2552,7 @@ def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, 
             f"ITL ({itl}ms) - within research range ({itl_min}-{itl_max}ms)",
             "success"
         ))
-    
+
     # E2E validation - RESEARCH BASED ONLY
     if e2e < e2e_min:
         messages.append((
@@ -2572,7 +2572,7 @@ def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, 
             f"E2E ({e2e}ms) - within research range ({e2e_min}-{e2e_max}ms)",
             "success"
         ))
-    
+
     # Add research note
     if use_case_ranges.get('research_note'):
         messages.append((
@@ -2580,35 +2580,35 @@ def validate_slo_against_research(use_case: str, ttft: int, itl: int, e2e: int, 
             f"{use_case_ranges['research_note']}",
             "info"
         ))
-    
+
     return messages
 
 def validate_hardware_efficiency(use_case: str, hardware: str, ttft: int, qps: int) -> list:
     """Validate if hardware choice is efficient for the use case and SLOs.
     Uses benchmark data for accurate recommendations.
-    
+
     Returns list of tuples: (icon, color, message, severity)
     """
     messages = []
-    
+
     if not hardware:
         return messages
-    
+
     # Load hardware benchmarks from research data
     research_data = load_research_slo_ranges()
     benchmark_hw = research_data.get('hardware_benchmarks', {}) if research_data else {}
-    
+
     # Hardware capabilities from benchmarks
     hardware_specs = {
         "H100": {
-            "cost_per_hour": 3.50, 
+            "cost_per_hour": 3.50,
             "tokens_per_sec": benchmark_hw.get('H100_x1', {}).get('tokens_per_sec_mean', 808),
             "ttft_mean": benchmark_hw.get('H100_x1', {}).get('ttft_mean_ms', 87.6),
             "tier": "premium",
             "best_for": benchmark_hw.get('H100_x1', {}).get('best_for', [])
         },
         "A100": {
-            "cost_per_hour": 2.20, 
+            "cost_per_hour": 2.20,
             "tokens_per_sec": benchmark_hw.get('A100_x1', {}).get('tokens_per_sec_mean', 412),
             "ttft_mean": benchmark_hw.get('A100_x1', {}).get('ttft_mean_ms', 88.8),
             "tier": "high",
@@ -2616,15 +2616,15 @@ def validate_hardware_efficiency(use_case: str, hardware: str, ttft: int, qps: i
         },
         "L40S": {"cost_per_hour": 1.50, "tokens_per_sec": 100, "ttft_mean": 150, "tier": "mid", "best_for": []},
     }
-    
+
     # Use cases that DON'T need premium hardware
     simple_use_cases = ["code_completion", "chatbot_conversational", "summarization_short", "translation"]
     complex_use_cases = ["research_legal_analysis", "long_document_summarization", "document_analysis_rag"]
-    
+
     hw_spec = hardware_specs.get(hardware, {})
     benchmark_tokens_sec = hw_spec.get('tokens_per_sec', 100)
     benchmark_ttft = hw_spec.get('ttft_mean', 100)
-    
+
     # Check for over-provisioning using benchmark data
     if hardware == "H100":
         if use_case in simple_use_cases and ttft > 150 and qps < 100:
@@ -2648,7 +2648,7 @@ def validate_hardware_efficiency(use_case: str, hardware: str, ttft: int, qps: i
                 f"H100 benchmarks: {benchmark_tokens_sec:.0f} tokens/sec, {benchmark_ttft:.0f}ms avg TTFT",
                 "info"
             ))
-    
+
     if hardware == "A100":
         if use_case in simple_use_cases and ttft > 200 and qps < 50:
             messages.append((
@@ -2669,7 +2669,7 @@ def validate_hardware_efficiency(use_case: str, hardware: str, ttft: int, qps: i
                 f"A100 benchmarks: {benchmark_tokens_sec:.0f} tokens/sec, {benchmark_ttft:.0f}ms avg TTFT",
                 "info"
             ))
-    
+
     if hardware == "L40S":
         if use_case in complex_use_cases:
             messages.append((
@@ -2683,61 +2683,61 @@ def validate_hardware_efficiency(use_case: str, hardware: str, ttft: int, qps: i
                 f"L40S - Cost-efficient for {use_case.replace('_', ' ')}!",
                 "success"
             ))
-    
+
     return messages
 
 def get_workload_insights(use_case: str, qps: int, user_count: int) -> list:
     """Get workload pattern insights based on research data and benchmarks.
-    
+
     Returns list of tuples: (icon, color, message, severity)
     """
     messages = []
     workload_data = load_research_workload_patterns()
-    
+
     if not workload_data or 'workload_distributions' not in workload_data:
         return messages
-    
+
     workload_patterns = workload_data.get('workload_distributions', {})
     traffic_profiles = workload_data.get('traffic_profiles', {})
     hardware_throughput = workload_data.get('hardware_throughput', {})
     capacity_guidance = workload_data.get('capacity_planning', {}).get('blis_guidance', {})
-    
+
     # Get use case specific pattern
     pattern = workload_patterns.get(use_case)
     traffic = traffic_profiles.get(use_case)
-    
+
     if pattern:
         distribution = pattern.get('distribution', 'poisson')
         active_fraction = pattern.get('active_fraction', {}).get('mean', 0.2)
         peak_multiplier = pattern.get('peak_multiplier', 2.0)
         req_per_min = pattern.get('requests_per_active_user_per_min', {}).get('mean', 0.5)
-        
+
         # Get benchmark data for this use case
         benchmark_perf = pattern.get('benchmark_perfmark', {})
         benchmark_optimal_rps = benchmark_perf.get('optimal_rps', 1.0)
         benchmark_max_rps = benchmark_perf.get('max_rps_tested', 10)
         benchmark_e2e_p95 = benchmark_perf.get('e2e_p95_at_optimal', 5000)
-        
+
         # Calculate expected metrics
         expected_concurrent = int(user_count * active_fraction)
         expected_rps = (expected_concurrent * req_per_min) / 60
         expected_peak_rps = expected_rps * peak_multiplier
-        
+
         messages.append((
             "", "#000000",
             f"Pattern: {distribution.replace('_', ' ').title()} | {int(active_fraction*100)}% concurrent users",
             "info"
         ))
-        
+
         # Note: Peak multiplier info now shown inline in workload profile box
-    
+
     if traffic:
         prompt_tokens = traffic.get('prompt_tokens', 512)
         output_tokens = traffic.get('output_tokens', 256)
         # Note: Token profile info now shown inline in workload profile box
-    
+
     # Hardware recommendations moved to Recommendation tab (uses benchmark data)
-    
+
     return messages
 
 @st.cache_data
@@ -2790,21 +2790,21 @@ BENCHMARK_TO_AA_NAME_MAP = {
 
 def get_raw_aa_accuracy(model_name: str, use_case: str) -> float:
     """Get raw AA benchmark accuracy for a model from the weighted scores CSV.
-    
+
     This returns the actual benchmark score, NOT the composite quality score.
     """
     df = load_weighted_scores(use_case)
     if df.empty:
         return 0.0
-    
+
     # Normalize model name - remove extra spaces, convert to lowercase
     model_lower = model_name.lower().strip().replace('  ', ' ')
-    
+
     # Extract size identifier (e.g., "120b", "20b", "70b") for differentiation
     import re
     size_match = re.search(r'(\d+)b', model_lower)
     model_size = size_match.group(1) if size_match else None
-    
+
     # Try direct mapping first
     aa_name = BENCHMARK_TO_AA_NAME_MAP.get(model_lower)
     if not aa_name:
@@ -2812,11 +2812,11 @@ def get_raw_aa_accuracy(model_name: str, use_case: str) -> float:
         aa_name = BENCHMARK_TO_AA_NAME_MAP.get(model_lower.replace('-', ' '))
     if not aa_name:
         aa_name = model_lower
-    
+
     # Look for EXACT model in CSV (case-insensitive)
     for _, row in df.iterrows():
         csv_model = str(row.get('Model Name', row.get('model_name', ''))).lower().strip()
-        
+
         # Exact match with mapped name
         if csv_model == aa_name.lower():
             score_str = str(row.get('Use Case Score', row.get('Weighted Score', '0')))
@@ -2824,19 +2824,19 @@ def get_raw_aa_accuracy(model_name: str, use_case: str) -> float:
                 return float(score_str.replace('%', ''))
             except:
                 return 0.0
-    
+
     # Partial match - but must match SIZE to avoid 120B/20B confusion
     for _, row in df.iterrows():
         csv_model = str(row.get('Model Name', row.get('model_name', ''))).lower().strip()
-        
+
         # Check if base model name matches AND size matches
         base_name = model_lower.replace('-', ' ').replace('_', ' ').split()[0] if model_lower else ""
-        
+
         if base_name and base_name in csv_model:
             # Verify size matches to avoid 120B vs 20B confusion
             csv_size_match = re.search(r'(\d+)b', csv_model)
             csv_size = csv_size_match.group(1) if csv_size_match else None
-            
+
             if model_size and csv_size and model_size == csv_size:
                 # Size matches - this is the right model
                 score_str = str(row.get('Use Case Score', row.get('Weighted Score', '0')))
@@ -2851,13 +2851,13 @@ def get_raw_aa_accuracy(model_name: str, use_case: str) -> float:
                     return float(score_str.replace('%', ''))
                 except:
                     return 0.0
-    
+
     return 0.0
 
 @st.cache_data
 def load_model_pricing() -> pd.DataFrame:
     """Load model pricing and latency data from model_pricing.csv.
-    
+
     This provides REAL data for:
     - Cost scoring: price_blended ($/1M tokens)
     - Latency scoring: median_output_tokens_per_sec, median_ttft_seconds
@@ -2889,7 +2889,7 @@ def extract_business_context(user_input: str) -> Optional[dict]:
             return response.json()
     except Exception:
         pass
-    
+
     # Mock response for demo
     return mock_extraction(user_input)
 
@@ -2897,7 +2897,7 @@ def extract_business_context(user_input: str) -> Optional[dict]:
 def mock_extraction(user_input: str) -> dict:
     """Mock extraction for demo purposes - supports all 9 use cases with robust error handling."""
     import re
-    
+
     # Input validation - handle edge cases
     if not user_input or not isinstance(user_input, str):
         return {
@@ -2906,56 +2906,56 @@ def mock_extraction(user_input: str) -> dict:
             "hardware": None,
             "priority": "balanced",
         }
-    
+
     # Clean and normalize input
     text_lower = user_input.lower().strip()
-    
+
     # USE CASE DETECTION - Order matters! More specific patterns first
     use_case = "chatbot_conversational"  # default
-    
+
     # 1. Translation - check first (very specific)
     if any(kw in text_lower for kw in ["translat", "language pair", "multilingual", "locali"]):
         use_case = "translation"
-    
+
     # 2. Long Document Summarization - check before short summarization
-    elif any(kw in text_lower for kw in ["long summar", "long document", "book summar", "report summar", 
+    elif any(kw in text_lower for kw in ["long summar", "long document", "book summar", "report summar",
                                           "chapter", "extensive summar", "lengthy", "50+ page", "research paper"]):
         use_case = "long_document_summarization"
-    
+
     # 3. Short Summarization - check BEFORE content generation (article summarization != content generation)
     elif any(kw in text_lower for kw in ["summar", "tldr", "brief", "condense", "digest", "news summar"]):
         use_case = "summarization_short"
-    
+
     # 4. Content Generation - check before code
-    elif any(kw in text_lower for kw in ["content generat", "content creation", "creative writ", "marketing content", 
+    elif any(kw in text_lower for kw in ["content generat", "content creation", "creative writ", "marketing content",
                                           "blog post", "copywriting", "content tool"]):
         use_case = "content_generation"
-    
+
     # 5. Code Generation (detailed) - check before code completion
-    elif any(kw in text_lower for kw in ["code generat", "full code", "implement", "build software", 
+    elif any(kw in text_lower for kw in ["code generat", "full code", "implement", "build software",
                                           "create application", "write program"]):
         use_case = "code_generation_detailed"
-    
+
     # 6. Code Completion - IDE autocomplete
     elif any(kw in text_lower for kw in ["code complet", "autocomplete", "code assist", "ide", "copilot",
                                           "code suggestion", "developer tool"]):
         use_case = "code_completion"
-    
+
     # 7. Research/Legal Analysis
-    elif any(kw in text_lower for kw in ["legal", "research", "analys", "contract", "compliance", 
+    elif any(kw in text_lower for kw in ["legal", "research", "analys", "contract", "compliance",
                                           "academic", "scientific", "review paper"]):
         use_case = "research_legal_analysis"
-    
+
     # 8. Document RAG
-    elif any(kw in text_lower for kw in ["rag", "retriev", "knowledge base", "document q&a", 
+    elif any(kw in text_lower for kw in ["rag", "retriev", "knowledge base", "document q&a",
                                           "document search", "enterprise search"]):
         use_case = "document_analysis_rag"
-    
+
     # 9. Chatbot Conversational (default for chat-related)
-    elif any(kw in text_lower for kw in ["chatbot", "chat", "customer support", "virtual assist", 
+    elif any(kw in text_lower for kw in ["chatbot", "chat", "customer support", "virtual assist",
                                           "conversation", "support bot", "help desk"]):
         use_case = "chatbot_conversational"
-    
+
     # Detect user count - look for numbers followed by user-related words
     # Avoid matching "50+ pages", "7B params", "80GB", etc.
     user_patterns = [
@@ -2964,7 +2964,7 @@ def mock_extraction(user_input: str) -> dict:
         r'for\s+(\d+[,.]?\d*)\s*(k)?\s*(users|developers|researchers|people)?',
         r'(\d+[,.]?\d*)\s+team',
     ]
-    
+
     user_count = 1000  # default
     for pattern in user_patterns:
         user_match = re.search(pattern, text_lower)
@@ -2977,7 +2977,7 @@ def mock_extraction(user_input: str) -> dict:
                 num *= 1000
             user_count = int(num)
             break
-    
+
     # Detect hardware
     hardware = None
     if "h100" in text_lower:
@@ -2986,25 +2986,25 @@ def mock_extraction(user_input: str) -> dict:
         hardware = "A100"
     elif "l40" in text_lower:
         hardware = "L40S"
-    
+
     # Detect priority from user input
     priority = "balanced"  # default
-    
+
     # Quality keywords - check these FIRST (accuracy is more specific than generic "critical")
-    quality_keywords = ["accuracy", "accurate", "quality", "precision", "high quality", "top quality", 
+    quality_keywords = ["accuracy", "accurate", "quality", "precision", "high quality", "top quality",
                         "accuracy is critical", "quality is critical", "quality is most important",
                         "accuracy is most important", "best quality", "highest accuracy"]
-    
+
     # Latency keywords - "critical" removed (too generic)
-    latency_keywords = ["latency", "fast", "speed", "quick", "responsive", "real-time", "instant", 
+    latency_keywords = ["latency", "fast", "speed", "quick", "responsive", "real-time", "instant",
                         "low latency", "latency is critical", "under 200ms", "under 100ms", "millisecond"]
-    
+
     cost_keywords = ["cost", "cheap", "budget", "efficient", "affordable", "save money", "cost-effective",
                      "budget is tight", "minimize cost"]
-    
+
     throughput_keywords = ["throughput", "scale", "high volume", "capacity", "concurrent", "many users",
                            "high traffic", "peak load"]
-    
+
     # Check for QUALITY priority FIRST (most specific signals)
     if any(kw in text_lower for kw in quality_keywords):
         priority = "high_accuracy"
@@ -3017,7 +3017,7 @@ def mock_extraction(user_input: str) -> dict:
     # Check for throughput priority
     elif any(kw in text_lower for kw in throughput_keywords):
         priority = "high_throughput"
-    
+
     return {
         "use_case": use_case,
         "user_count": user_count,
@@ -3028,7 +3028,7 @@ def mock_extraction(user_input: str) -> dict:
 
 def get_enhanced_recommendation(business_context: dict) -> Optional[dict]:
     """Get enhanced recommendation with explainability.
-    
+
     ALL logic is in backend - UI only fetches data.
     """
     try:
@@ -3043,7 +3043,7 @@ def get_enhanced_recommendation(business_context: dict) -> Optional[dict]:
         itl_target = business_context.get("itl_p95_target_ms", 200)
         e2e_target = business_context.get("e2e_p95_target_ms", 60000)
         percentile = business_context.get("percentile", "p95")
-        
+
         # Use the ranked-recommend-from-spec endpoint with proper fields
         response = requests.post(
             f"{API_BASE_URL}/api/ranked-recommend-from-spec",
@@ -3068,7 +3068,7 @@ def get_enhanced_recommendation(business_context: dict) -> Optional[dict]:
             return response.json()
     except Exception as e:
         st.warning(f"Backend call failed: {e}")
-    
+
     # Fallback only when backend unavailable
     return benchmark_recommendation(business_context)
 
@@ -3158,12 +3158,12 @@ HARDWARE_COSTS = {
 
 def benchmark_recommendation(context: dict) -> dict:
     """Benchmark-based recommendation using ACTUAL benchmark data.
-    
+
     NEW ARCHITECTURE:
     - Model quality: from weighted_scores CSVs (use-case specific)
     - Latency/throughput: from ACTUAL benchmarks (model+hardware specific)
     - Cost: from hardware tier (cheaper hardware = higher cost score)
-    
+
     Creates MODEL+HARDWARE combinations ranked by priority:
     - cost_saving: cheapest hardware that meets SLO for best models
     - low_latency: fastest hardware (lowest TTFT) for best models
@@ -3173,14 +3173,14 @@ def benchmark_recommendation(context: dict) -> dict:
     use_case = context.get("use_case", "chatbot_conversational")
     priority = context.get("priority", "balanced")
     user_count = context.get("user_count", 1000)
-    
+
     # Load performance benchmark data
     benchmark_data = load_performance_benchmarks()
     if not benchmark_data or 'benchmarks' not in benchmark_data:
         return mock_recommendation_fallback(context)
-    
+
     benchmarks = benchmark_data['benchmarks']
-    
+
     # Load quality scores for this use case
     weighted_df = load_weighted_scores(use_case)
     quality_lookup = {}
@@ -3193,7 +3193,7 @@ def benchmark_recommendation(context: dict) -> dict:
             else:
                 score = float(score_str) * 100 if score_str <= 1 else float(score_str)
             quality_lookup[model_name] = score
-    
+
     # Get SLO targets for this use case
     slo_data = get_slo_targets_for_use_case(use_case, priority)
     if slo_data is None:
@@ -3204,7 +3204,7 @@ def benchmark_recommendation(context: dict) -> dict:
         }
     ttft_max = slo_data.get('ttft_target', {}).get('max', 200)
     e2e_max = slo_data.get('e2e_target', {}).get('max', 5000)
-    
+
     # Priority weights for MCDM
     weights = {
         "balanced": {"accuracy": 0.30, "latency": 0.30, "cost": 0.25, "throughput": 0.15},
@@ -3213,21 +3213,21 @@ def benchmark_recommendation(context: dict) -> dict:
         "high_accuracy": {"accuracy": 0.50, "latency": 0.20, "cost": 0.15, "throughput": 0.15},
         "high_throughput": {"accuracy": 0.15, "latency": 0.15, "cost": 0.15, "throughput": 0.55},
     }[priority]
-    
+
     # Aggregate benchmark data by model+hardware (use best config per combo)
     # FILTER: Only include models that have BOTH AA quality AND benchmark performance data
     model_hw_combos = {}
     for b in benchmarks:
         model_repo = b['model_hf_repo']
-        
+
         # Skip models not in our valid list (must have both AA + benchmark data)
         if model_repo not in VALID_BENCHMARK_MODELS:
             continue
-            
+
         hw = b['hardware']
         hw_count = b['hardware_count']
         key = (model_repo, hw, hw_count)
-        
+
         # Keep the benchmark with lowest TTFT for each combo
         if key not in model_hw_combos or b['ttft_p95'] < model_hw_combos[key]['ttft_p95']:
             model_hw_combos[key] = {
@@ -3245,36 +3245,36 @@ def benchmark_recommendation(context: dict) -> dict:
                 'prompt_tokens': b['prompt_tokens'],
                 'output_tokens': b['output_tokens'],
             }
-    
+
     # Calculate scores for each model+hardware combo
     scored_combos = []
-    
+
     # Find max values for normalization
     max_ttft = max(c['ttft_p95'] for c in model_hw_combos.values()) or 1
     max_tps = max(c['tokens_per_second'] for c in model_hw_combos.values()) or 1
     max_cost = max(HARDWARE_COSTS.values()) or 1
-    
+
     for key, combo in model_hw_combos.items():
         # Get quality score from CSV (mapped model name)
         quality_model = BENCHMARK_TO_QUALITY_MODEL_MAP.get(combo['model_repo'], combo['model_name'])
         quality_score = quality_lookup.get(quality_model, 30.0)  # Default 30 if not found
-        
+
         # Latency score: lower TTFT = higher score (inverted, normalized 0-100)
         latency_score = 100 - (combo['ttft_p95'] / max_ttft * 100)
         latency_score = max(10, min(100, latency_score))
-        
+
         # Throughput score: higher TPS = higher score
         throughput_score = (combo['tokens_per_second'] / max_tps) * 100
         throughput_score = max(10, min(100, throughput_score))
-        
+
         # Cost score: lower hardware cost = higher score (inverted)
         hw_cost = HARDWARE_COSTS.get((combo['hardware'], combo['hardware_count']), 10000)
         cost_score = 100 - (hw_cost / max_cost * 80)  # Leave headroom
         cost_score = max(10, min(100, cost_score))
-        
+
         # Check if meets SLO
         meets_slo = combo['ttft_p95'] <= ttft_max and combo['e2e_p95'] <= e2e_max
-        
+
         # Calculate weighted MCDM score
         final_score = (
             weights['accuracy'] * quality_score +
@@ -3282,11 +3282,11 @@ def benchmark_recommendation(context: dict) -> dict:
             weights['cost'] * cost_score +
             weights['throughput'] * throughput_score
         )
-        
+
         # Bonus for meeting SLO
         if meets_slo:
             final_score += 5
-        
+
         scored_combos.append({
             **combo,
             'quality_score': round(quality_score, 1),
@@ -3298,16 +3298,16 @@ def benchmark_recommendation(context: dict) -> dict:
             'hw_cost_monthly': hw_cost,
             'quality_model_name': quality_model,
         })
-    
+
     # Sort by final score (highest first)
     scored_combos.sort(key=lambda x: x['final_score'], reverse=True)
-    
+
     # Get top recommendation
     if not scored_combos:
         return mock_recommendation_fallback(context)
-    
+
     top = scored_combos[0]
-    
+
     # Build recommendation response
     return {
         "model_name": top['model_name'].replace('-', ' ').title(),
@@ -3422,7 +3422,7 @@ def get_selection_reason(top: dict, priority: str) -> str:
     ttft = top['ttft_p95']
     cost = top['hw_cost_monthly']
     tps = top['tokens_per_second']
-    
+
     if priority == "cost_saving":
         return f"{model} on {hw} is the most cost-effective option (${cost:,}/mo) that meets your SLO requirements with {ttft:.0f}ms TTFT."
     elif priority == "low_latency":
@@ -3442,26 +3442,26 @@ def get_model_pros(combo: dict, priority: str) -> list:
     tps = combo['tokens_per_second']
     cost = combo['hw_cost_monthly']
     quality = combo['quality_score']
-    
+
     if ttft < 50:
         pros.append(f"Ultra-fast TTFT ({ttft:.0f}ms)")
     elif ttft < 100:
         pros.append(f"Fast TTFT ({ttft:.0f}ms)")
-    
+
     if tps > 400:
         pros.append(f"🚀 High throughput ({tps:.0f} tok/s)")
     elif tps > 200:
         pros.append(f"Good throughput ({tps:.0f} tok/s)")
-    
+
     if cost < 3000:
         pros.append(f"Cost-efficient (${cost:,}/mo)")
-    
+
     if quality > 50:
         pros.append(f"High accuracy ({quality:.0f}%)")
-    
+
     if combo['meets_slo']:
         pros.append("Meets SLO targets")
-    
+
     return pros[:4] if pros else ["Benchmarked"]
 
 
@@ -3472,22 +3472,22 @@ def get_model_cons(combo: dict, priority: str) -> list:
     tps = combo['tokens_per_second']
     cost = combo['hw_cost_monthly']
     quality = combo['quality_score']
-    
+
     if ttft > 200:
         cons.append(f"⏱️ Higher latency ({ttft:.0f}ms)")
-    
+
     if tps < 100:
         cons.append(f"📉 Lower throughput ({tps:.0f} tok/s)")
-    
+
     if cost > 10000:
         cons.append(f"💸 Premium cost (${cost:,}/mo)")
-    
+
     if quality < 40:
         cons.append(f"Lower accuracy score ({quality:.0f}%)")
-    
+
     if not combo['meets_slo']:
         cons.append("May not meet SLO")
-    
+
     return cons[:2]
 
 
@@ -3498,21 +3498,21 @@ def mock_recommendation_fallback(context: dict) -> dict:
 
 def mock_recommendation(context: dict) -> dict:
     """FALLBACK: Recommendation using CSV data when benchmarks unavailable.
-    
+
     Data sources:
     - Accuracy: weighted_scores/{use_case}.csv (task-specific benchmark scores)
     - Cost: model_pricing.csv (price_blended - $/1M tokens)
     - Latency: model_pricing.csv (median_output_tokens_per_sec, median_ttft_seconds)
-    
+
     Enterprise-grade error handling with graceful fallbacks.
     """
     # Validate context input
     if not context or not isinstance(context, dict):
         context = {}
-    
+
     use_case = context.get("use_case", "chatbot_conversational")
     priority = context.get("priority", "balanced")
-    
+
     # Validate use_case is in allowed list
     valid_use_cases = [
         "chatbot_conversational", "code_completion", "code_generation_detailed",
@@ -3521,19 +3521,19 @@ def mock_recommendation(context: dict) -> dict:
     ]
     if use_case not in valid_use_cases:
         use_case = "chatbot_conversational"
-    
+
     # Validate priority is in allowed list
     valid_priorities = ["balanced", "low_latency", "cost_saving", "high_accuracy", "high_throughput"]
     if priority not in valid_priorities:
         priority = "balanced"
-    
+
     # Load use-case-specific weighted scores (the QUALITY component)
     weighted_df = load_weighted_scores(use_case)
     # Also load 206-model benchmark for validation
     all_models_df = load_206_models()
     # Load REAL pricing and latency data
     pricing_df = load_model_pricing()
-    
+
     # Create pricing lookup dict (model_name -> pricing data)
     pricing_lookup = {}
     if not pricing_df.empty:
@@ -3547,13 +3547,13 @@ def mock_recommendation(context: dict) -> dict:
                     'tokens_per_sec': row.get('median_output_tokens_per_sec', 0),
                     'ttft_seconds': row.get('median_ttft_seconds', 0),
                 }
-    
+
     # Calculate normalization ranges for scoring
     # Cost: Lower is better (0 = most expensive, 100 = cheapest/free)
     max_price = max((p['price_blended'] for p in pricing_lookup.values() if p['price_blended'] > 0), default=10)
     # Latency: Higher tokens/sec is better (faster = higher score)
     max_tokens_sec = max((p['tokens_per_sec'] for p in pricing_lookup.values() if p['tokens_per_sec'] > 0), default=500)
-    
+
     # Priority-based weights for MCDM scoring
     weights = {
         "balanced": {"accuracy": 0.30, "latency": 0.25, "cost": 0.25, "capacity": 0.20},
@@ -3562,7 +3562,7 @@ def mock_recommendation(context: dict) -> dict:
         "high_accuracy": {"accuracy": 0.50, "latency": 0.20, "cost": 0.15, "capacity": 0.15},
         "high_throughput": {"accuracy": 0.20, "latency": 0.15, "cost": 0.15, "capacity": 0.50},
     }[priority]
-    
+
     # Parse use case score from weighted_scores CSV
     def parse_score(x):
         if pd.isna(x) or x == 'N/A':
@@ -3570,23 +3570,23 @@ def mock_recommendation(context: dict) -> dict:
         if isinstance(x, str):
             return float(x.replace('%', '')) if '%' in x else float(x) * 100
         return float(x) * 100 if x <= 1 else float(x)
-    
+
     def calculate_cost_score(model_name: str) -> float:
         """Calculate cost score from REAL pricing data.
         Lower price = higher score (100 = free, 0 = most expensive)
         """
         pricing = pricing_lookup.get(model_name, {})
         price = pricing.get('price_blended', 0)
-        
+
         if price <= 0:
             # Free model = perfect cost score
             return 95
-        
+
         # Normalize: lower price = higher score
         # Score = 100 - (price / max_price * 100)
         cost_score = 100 - (price / max_price * 80)  # Cap at 80% reduction
         return max(min(cost_score, 100), 20)  # Range: 20-100
-    
+
     def calculate_latency_score(model_name: str) -> float:
         """Calculate latency score from REAL speed data.
         Higher tokens/sec = higher score
@@ -3595,13 +3595,13 @@ def mock_recommendation(context: dict) -> dict:
         pricing = pricing_lookup.get(model_name, {})
         tokens_sec = pricing.get('tokens_per_sec', 0) or 0
         ttft = pricing.get('ttft_seconds', 0) or 0
-        
+
         # Handle NaN values
         if isinstance(tokens_sec, float) and math.isnan(tokens_sec):
             tokens_sec = 0
         if isinstance(ttft, float) and math.isnan(ttft):
             ttft = 0
-        
+
         if tokens_sec <= 0:
             # No data - estimate based on model size
             model_lower = model_name.lower()
@@ -3615,69 +3615,69 @@ def mock_recommendation(context: dict) -> dict:
             elif is_small:
                 return 80.0
             return 55.0  # Default for unknown size
-        
+
         # Normalize: higher tokens/sec = higher score
         safe_max = max_tokens_sec if max_tokens_sec > 0 else 500
         latency_score = (tokens_sec / safe_max) * 100
-        
+
         # Bonus for low TTFT (< 0.5s = +10, < 1s = +5)
         if 0 < ttft < 0.5:
             latency_score += 10
         elif 0 < ttft < 1.0:
             latency_score += 5
-        
+
         return float(max(min(latency_score, 100), 20))
-    
+
     models = []
-    
+
     # Use weighted_scores CSV for quality (already ranked by use case)
     if not weighted_df.empty:
         # Get valid model names from the 206-model benchmark
         valid_models = set(all_models_df['Model Name'].dropna().tolist()) if not all_models_df.empty else set()
-        
+
         # Filter weighted_scores to only include models in the 206 benchmark
         weighted_df = weighted_df[weighted_df['Model Name'].isin(valid_models)] if valid_models else weighted_df
-        
+
         # Get top 10 models from weighted scores (already sorted by use case quality)
         top_models = weighted_df.head(10)
-        
+
         for _, row in top_models.iterrows():
             model_name = row.get("Model Name", "")
             provider = row.get("Provider", "Unknown")
-            
+
             # Get QUALITY from USE-CASE-SPECIFIC weighted score!
             quality_score = parse_score(row.get('Use Case Score', 0))
-            
+
             # Skip models with no quality score
             if quality_score == 0:
                 continue
-            
+
             # Get REAL cost and latency scores from model_pricing.csv
             cost_score = calculate_cost_score(model_name)
             latency_score = calculate_latency_score(model_name)
-            
+
             # Capacity score based on throughput and model architecture
             model_lower = model_name.lower()
             is_moe = ("a" in model_lower and "b" in model_lower) or "moe" in model_lower or "mixture" in model_lower
             is_small = any(s in model_lower for s in ["7b", "8b", "3b", "4b", "1.7b", "1b"])
-            
+
             # Ensure latency_score is a valid number
             safe_latency = latency_score if latency_score and latency_score > 0 else 55.0
-            
+
             if is_moe:
                 capacity_score = 80 + (safe_latency / 10)  # MoE = high capacity
             elif is_small:
                 capacity_score = 75 + (safe_latency / 8)
             else:
                 capacity_score = 50 + (safe_latency / 5)
-            
+
             # Ensure all scores are valid floats
             import math
             quality_score = float(quality_score) if quality_score and not (isinstance(quality_score, float) and math.isnan(quality_score)) else 50.0
             latency_score = float(safe_latency)
             cost_score = float(cost_score) if cost_score and not (isinstance(cost_score, float) and math.isnan(cost_score)) else 50.0
             capacity_score = float(capacity_score) if capacity_score and not (isinstance(capacity_score, float) and math.isnan(capacity_score)) else 60.0
-            
+
             models.append({
                 "name": model_name,
                 "provider": provider,
@@ -3686,7 +3686,7 @@ def mock_recommendation(context: dict) -> dict:
                 "cost": min(max(cost_score, 0), 100),
                 "capacity": min(max(capacity_score, 0), 100),
             })
-    
+
     # Fallback to hardcoded models if CSV fails (using exact names from CSV)
     if not models:
         models = [
@@ -3696,7 +3696,7 @@ def mock_recommendation(context: dict) -> dict:
             {"name": "Qwen2.5 Instruct 72B", "provider": "Alibaba", "quality": 90, "latency": 58, "cost": 48, "capacity": 62},
             {"name": "Llama 3.1 Instruct 70B", "provider": "Meta", "quality": 88, "latency": 60, "cost": 50, "capacity": 65},
         ]
-    
+
     # Calculate final MCDM score (ensure no NaN values)
     import math
     for m in models:
@@ -3705,27 +3705,27 @@ def mock_recommendation(context: dict) -> dict:
         latency = m["latency"] if m["latency"] and not math.isnan(m["latency"]) else 50.0
         cost = m["cost"] if m["cost"] and not math.isnan(m["cost"]) else 50.0
         capacity = m["capacity"] if m["capacity"] and not math.isnan(m["capacity"]) else 50.0
-        
+
         m["final_score"] = (
             quality * weights["accuracy"] +
             latency * weights["latency"] +
             cost * weights["cost"] +
             capacity * weights["capacity"]
         )
-        
+
         # Ensure final_score is valid
         if math.isnan(m["final_score"]):
             m["final_score"] = 50.0
-    
+
     # Sort by score
     models.sort(key=lambda x: x["final_score"], reverse=True)
-    
+
     # Get hardware from context
     user_hardware = context.get("hardware", None)
-    
+
     # Get optimal hardware recommendation based on priority and SLO requirements
     hw_recommendation = recommend_optimal_hardware(use_case, priority, user_hardware)
-    
+
     # Use recommended hardware or user-specified
     if user_hardware:
         hardware = user_hardware
@@ -3733,13 +3733,13 @@ def mock_recommendation(context: dict) -> dict:
         hardware = hw_recommendation['recommended']['hardware']
     else:
         hardware = "H100"
-    
+
     # Build recommendations (top 10 to support filtering)
     recommendations = []
     for m in models[:10]:
         pros = []
         cons = []
-        
+
         if m["quality"] >= 90:
             pros.append("Top Quality")
         elif m["quality"] >= 80:
@@ -3752,7 +3752,7 @@ def mock_recommendation(context: dict) -> dict:
             pros.append("Cost-Efficient")
         if m["capacity"] >= 85:
             pros.append("High Capacity")
-        
+
         if m["quality"] < 75:
             cons.append("📉 Lower Quality")
         if m["latency"] < 55:
@@ -3761,10 +3761,10 @@ def mock_recommendation(context: dict) -> dict:
             cons.append("💸 Expensive")
         if m["capacity"] < 50:
             cons.append("Limited Capacity")
-        
+
         # Get REAL benchmark SLO data for this model
         benchmark_slo = get_slo_for_model(m["name"], use_case, hardware)
-        
+
         recommendation = {
             "model_name": m["name"],
             "provider": m["provider"],
@@ -3782,21 +3782,21 @@ def mock_recommendation(context: dict) -> dict:
             "pros": pros if pros else ["Balanced Performance"],
             "cons": cons if cons else ["No significant weaknesses"],
         }
-        
+
         # Add benchmark SLO data if available
         if benchmark_slo:
             recommendation["benchmark_slo"] = benchmark_slo
-        
+
         recommendations.append(recommendation)
-    
+
     # Build response with hardware recommendation
     response = {"recommendations": recommendations}
-    
+
     # Add hardware recommendation details
     if hw_recommendation:
         response["hardware_recommendation"] = hw_recommendation
         response["slo_targets"] = hw_recommendation.get("slo_targets")
-    
+
     return response
 
 # =============================================================================
@@ -3846,7 +3846,7 @@ def render_stats(models_count: int):
         </div>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # MCDM Formula Explanation Expander
     # MCDM Expander with clean styling
     st.markdown("""
@@ -3885,11 +3885,11 @@ def render_stats(models_count: int):
         }
     </style>
     """, unsafe_allow_html=True)
-    
+
     with st.expander("MCDM Scoring Formula - How each component is calculated", expanded=False):
         st.markdown('<h4 style="color: #EE0000 !important; margin-bottom: 1.25rem; font-family: Inter, sans-serif;">Multi-Criteria Decision Making (MCDM)</h4>', unsafe_allow_html=True)
         st.code("FINAL_SCORE = w_accuracy × Accuracy + w_latency × Latency + w_cost × Cost + w_capacity × Capacity", language=None)
-        
+
         st.markdown("""
 <table style="width: 100%; border-collapse: collapse; margin-top: 1.5rem; background: transparent;">
 <tr style="border-bottom: 2px solid rgba(88, 166, 255, 0.25); background: transparent;">
@@ -3946,7 +3946,7 @@ def render_stats(models_count: int):
 def render_about_section(models_df: pd.DataFrame):
     """Render About section at the bottom with expandable info."""
     st.markdown("""
-    <div style="margin-top: 2rem; padding: 1.5rem; background: #000000; 
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #000000;
                 border-radius: 1rem; border: 1px solid rgba(255,255,255,0.2);">
         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
             <span style="color: #EE0000; font-weight: 700; font-size: 1.2rem;">About</span>
@@ -3963,7 +3963,7 @@ def render_about_section(models_df: pd.DataFrame):
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # MCDM Expander styling
     st.markdown("""
     <style>
@@ -3999,7 +3999,7 @@ def render_about_section(models_df: pd.DataFrame):
         }
     </style>
     """, unsafe_allow_html=True)
-    
+
     # Three expanders for extra info
     with st.expander("**Scoring Methodology** - How each category is calculated", expanded=False):
         st.markdown('<h4 style="color: #EE0000 !important; margin-bottom: 1.25rem; font-family: Inter, sans-serif;">4 Recommendation Categories</h4>', unsafe_allow_html=True)
@@ -4027,7 +4027,7 @@ def render_about_section(models_df: pd.DataFrame):
 </tr>
 </table>
         """, unsafe_allow_html=True)
-        
+
         st.markdown('<h4 style="color: #EE0000 !important; margin-top: 1.5rem; margin-bottom: 1rem; font-family: Inter, sans-serif;">Balanced Score (Accuracy-Dominant Formula)</h4>', unsafe_allow_html=True)
         st.code("BALANCED = Accuracy × 70% + avg(Latency, Cost) × 30%", language=None)
         st.markdown("""
@@ -4044,10 +4044,10 @@ def render_about_section(models_df: pd.DataFrame):
     Model B (Acc=60, Lat=90, Cost=95) → 60×0.7 + 92.5×0.3 = <strong>69.75</strong> → A wins!</em>
 </p>
         """, unsafe_allow_html=True)
-    
+
     with st.expander("Model Catalog - Browse 206 open-source models", expanded=False):
         render_catalog_content(models_df)
-    
+
     with st.expander("How It Works - End-to-end pipeline documentation", expanded=False):
         render_how_it_works_content()
 
@@ -4056,22 +4056,22 @@ def render_catalog_content(models_df: pd.DataFrame):
     """Model catalog content for About section expander."""
     st.markdown("""
     <p style="color: rgba(255,255,255,0.9); margin: 0 0 1rem 0; font-size: 0.95rem;">
-        Complete benchmark data from <strong style="color: #D4AF37;">Red Hat Performance DB</strong> + 
-        <strong style="color: #38ef7d;">Artificial Analysis</strong> covering 
-        <span style="color: #38ef7d; font-weight: 700;">50 benchmarked models</span> with 
-        <span style="color: #667eea; font-weight: 700;">50 models having accuracy scores</span> across 
+        Complete benchmark data from <strong style="color: #D4AF37;">Red Hat Performance DB</strong> +
+        <strong style="color: #38ef7d;">Artificial Analysis</strong> covering
+        <span style="color: #38ef7d; font-weight: 700;">50 benchmarked models</span> with
+        <span style="color: #667eea; font-weight: 700;">50 models having accuracy scores</span> across
         <span style="color: #a371f7; font-weight: 700;">15 benchmark datasets</span>.
     </p>
     """, unsafe_allow_html=True)
-    
+
     if models_df is not None and not models_df.empty:
         # Search
         search = st.text_input("Search models", placeholder="e.g., Llama, Qwen, DeepSeek...", key="about_catalog_search")
-        
+
         filtered_df = models_df.copy()
         if search:
             filtered_df = filtered_df[filtered_df.apply(lambda row: search.lower() in str(row).lower(), axis=1)]
-        
+
         st.markdown(f"**Showing {len(filtered_df)} of {len(models_df)} models**")
         st.dataframe(filtered_df.head(20), use_container_width=True, height=400)
     else:
@@ -4098,7 +4098,7 @@ def render_how_it_works_content():
             </div>
         </div>
     </div>
-    
+
     <h4 style="color: #EE0000; margin: 1.5rem 0 1rem 0;">Supported Use Cases</h4>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
         <div style="padding: 0.75rem; background: #000000; border-radius: 0.5rem; color: rgba(255,255,255,0.9); font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.2);">Chat Completion</div>
@@ -4111,7 +4111,7 @@ def render_how_it_works_content():
         <div style="padding: 0.75rem; background: #000000; border-radius: 0.5rem; color: rgba(255,255,255,0.9); font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.2);">Long Doc Summary</div>
         <div style="padding: 0.75rem; background: #000000; border-radius: 0.5rem; color: rgba(255,255,255,0.9); font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.2);">Code Generation</div>
     </div>
-    
+
     <h4 style="color: #EE0000; margin: 1.5rem 0 1rem 0;">Data Sources</h4>
     <ul style="color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.8; margin: 0; padding-left: 1.5rem;">
         <li><strong style="color: white;">Artificial Analysis</strong> - Model benchmarks, pricing, and performance data</li>
@@ -4146,11 +4146,11 @@ def render_pipeline():
 
 def render_top5_table(recommendations: list, priority: str):
     """Render beautiful Top 5 recommendation leaderboard table with filtering.
-    
+
     NOTE: The backend now implements the ACCURACY-FIRST strategy in ranking_service.py.
     The UI uses the backend's pre-ranked lists directly from st.session_state.ranked_response.
     """
-    
+
     # Filter controls
     st.markdown("""
     <style>
@@ -4237,8 +4237,8 @@ def render_top5_table(recommendations: list, priority: str):
             color: white !important;
         }
     </style>
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding: 1rem; 
-                background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(56, 239, 125, 0.05)); 
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding: 1rem;
+                background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(56, 239, 125, 0.05));
                 border-radius: 1rem; border: 1px solid rgba(102, 126, 234, 0.2);">
         <div style="display: flex; align-items: center; gap: 0.5rem;">
             <span style="font-size: 1.5rem;"></span>
@@ -4247,19 +4247,19 @@ def render_top5_table(recommendations: list, priority: str):
         <span style="color: rgba(255,255,255,0.5); font-size: 0.85rem;">Click ◀ ▶ to browse top 5</span>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # Get use case for raw accuracy lookup
     use_case = st.session_state.get("detected_use_case", "chatbot_conversational")
-    
+
     if not recommendations:
         st.info("No models available. Please check your requirements.")
         return
-    
+
     # Helper function to get scores from recommendation
     # ALL scores come from BACKEND - no UI calculation
     def get_scores(rec):
         backend_scores = rec.get("scores", {}) or {}
-        
+
         return {
             "accuracy": backend_scores.get("accuracy_score", 0),
             "latency": backend_scores.get("latency_score", 0),
@@ -4267,7 +4267,7 @@ def render_top5_table(recommendations: list, priority: str):
             "complexity": backend_scores.get("complexity_score", 0),
             "final": backend_scores.get("balanced_score", 0),
         }
-    
+
     # ==========================================================================
     # USE BACKEND'S PRE-RANKED LISTS (ACCURACY-FIRST strategy applied in backend)
     # The backend's ranking_service.py implements:
@@ -4276,14 +4276,14 @@ def render_top5_table(recommendations: list, priority: str):
     # 3. Best Latency/Cost/etc. are ranked WITHIN that quality tier
     # ==========================================================================
     ranked_response = st.session_state.get("ranked_response", {})
-    
+
     # Get pre-ranked lists from backend (already filtered to high-quality models)
     top5_balanced = ranked_response.get("balanced", [])[:5]
     top5_accuracy = ranked_response.get("best_accuracy", [])[:5]
     top5_latency = ranked_response.get("lowest_latency", [])[:5]
     top5_cost = ranked_response.get("lowest_cost", [])[:5]
     top5_simplest = ranked_response.get("simplest", [])[:5]
-    
+
     # Fallback to local sorting if backend response is empty (shouldn't happen)
     if not top5_balanced and recommendations:
         top5_balanced = sorted(recommendations, key=lambda x: get_scores(x)["final"], reverse=True)[:5]
@@ -4295,21 +4295,21 @@ def render_top5_table(recommendations: list, priority: str):
         top5_cost = sorted(recommendations, key=lambda x: get_scores(x)["cost"], reverse=True)[:5]
     if not top5_simplest and recommendations:
         top5_simplest = sorted(recommendations, key=lambda x: get_scores(x)["complexity"], reverse=True)[:5]
-    
+
     # Best = first in each list
     best_overall = top5_balanced[0] if top5_balanced else None
     best_accuracy = top5_accuracy[0] if top5_accuracy else None
     best_latency = top5_latency[0] if top5_latency else None
     best_cost = top5_cost[0] if top5_cost else None
     best_simplest = top5_simplest[0] if top5_simplest else None
-    
+
     # Store top 5 for each category in session state (for explore dialogs)
     st.session_state.top5_balanced = top5_balanced
     st.session_state.top5_accuracy = top5_accuracy
     st.session_state.top5_latency = top5_latency
     st.session_state.top5_cost = top5_cost
     st.session_state.top5_simplest = top5_simplest
-    
+
     # Helper to render a "Best" card
     def render_best_card(title, icon, color, rec, highlight_field):
         scores = get_scores(rec)
@@ -4318,13 +4318,13 @@ def render_top5_table(recommendations: list, priority: str):
         hw_type = gpu_cfg.get('gpu_type', rec.get('hardware', 'H100'))
         hw_count = gpu_cfg.get('gpu_count', rec.get('hardware_count', 1))
         hw_display = f"{hw_count}x {hw_type}"
-        
+
         highlight_value = scores.get(highlight_field, 0)
         final_score = scores.get("final", 0)
-        
+
         return f'''
-        <div style="background: linear-gradient(135deg, rgba(30,30,40,0.9), rgba(40,40,55,0.9)); 
-                    border: 2px solid {color}40; border-radius: 16px; padding: 1.25rem; 
+        <div style="background: linear-gradient(135deg, rgba(30,30,40,0.9), rgba(40,40,55,0.9));
+                    border: 2px solid {color}40; border-radius: 16px; padding: 1.25rem;
                     box-shadow: 0 8px 32px {color}20;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                 <span style="font-size: 1.5rem;">{icon}</span>
@@ -4348,22 +4348,22 @@ def render_top5_table(recommendations: list, priority: str):
                         </div>
                         </div>
         '''
-    
+
     # Helper to render a CAROUSEL card with arrows INSIDE the card design
     def render_carousel_card(title, color, recs_list, highlight_field, category_key, col):
         """Render a card with ← → arrows embedded inside the card."""
         if not recs_list:
             return
-        
+
         # Initialize carousel index
         idx_key = f"carousel_{category_key}"
         if idx_key not in st.session_state:
             st.session_state[idx_key] = 0
-        
+
         total = min(5, len(recs_list))
         current_idx = st.session_state[idx_key] % total
         rec = recs_list[current_idx]
-        
+
         scores = get_scores(rec)
         model_name = rec.get('model_name', 'Unknown')
         gpu_cfg = rec.get('gpu_config', {}) or {}
@@ -4381,13 +4381,13 @@ def render_top5_table(recommendations: list, priority: str):
         hw_display = f"{hw_count}x{hw_type}"
         highlight_value = scores.get(highlight_field, 0)
         final_score = scores.get("final", 0)
-        
+
         # Dots indicator
         dots_html = ""
         for i in range(total):
             dot_color = "#EE0000" if i == current_idx else "rgba(255,255,255,0.3)"
             dots_html += f'<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:{dot_color};margin:0 2px;"></span>'
-        
+
         with col:
             # Card with arrows INSIDE using CSS absolute positioning
             card_html = f'''<div style="background: linear-gradient(135deg, rgba(30,30,40,0.95), rgba(40,40,55,0.95)); border: 2px solid {color}40; border-radius: 16px; padding: 1.75rem; box-shadow: 0 8px 32px {color}20; min-height: 380px; position: relative;">
@@ -4446,7 +4446,7 @@ def render_top5_table(recommendations: list, priority: str):
 </div>
 </div>'''
             st.markdown(card_html, unsafe_allow_html=True)
-            
+
             # Small arrow buttons inside card footer area
             btn_col1, btn_col2, btn_col3 = st.columns([1, 2, 1])
             with btn_col1:
@@ -4465,16 +4465,16 @@ def render_top5_table(recommendations: list, priority: str):
                     st.session_state.show_winner_dialog = False
                     # Use session state directly to get latest value
                     st.session_state[idx_key] = (st.session_state[idx_key] + 1) % total
-    
+
     # Render 4 carousel cards: 2 on top row, 2 on bottom row
     col1, col2 = st.columns(2)
     render_carousel_card("Balanced", "#EE0000", top5_balanced, "final", "balanced", col1)
     render_carousel_card("Best Accuracy", "#EE0000", top5_accuracy, "accuracy", "accuracy", col2)
-    
+
     col3, col4 = st.columns(2)
     render_carousel_card("Best Latency", "#EE0000", top5_latency, "latency", "latency", col3)
     render_carousel_card("Best Cost", "#EE0000", top5_cost, "cost", "cost", col4)
-    
+
     # Show info if limited models available
     total_available = len(recommendations)
     if total_available <= 2:
@@ -4486,7 +4486,7 @@ def render_top5_table(recommendations: list, priority: str):
             </span>
                         </div>
         ''', unsafe_allow_html=True)
-    
+
 
 
 def render_score_bar(label: str, icon: str, score: float, bar_class: str, contribution: float):
@@ -4497,18 +4497,18 @@ def render_score_bar(label: str, icon: str, score: float, bar_class: str, contri
         score = 50  # Default to 50 if NaN
     if math.isnan(contribution) if isinstance(contribution, float) else False:
         contribution = 0
-    
+
     score = max(0, min(100, score))  # Clamp to 0-100
-    
+
     # Color based on bar class
     bar_colors = {
         "score-bar-quality": "#38ef7d",
-        "score-bar-latency": "#667eea", 
+        "score-bar-latency": "#667eea",
         "score-bar-cost": "#f5576c",
         "score-bar-capacity": "#8b5cf6",
     }
     bar_color = bar_colors.get(bar_class, "#38ef7d")
-    
+
     st.markdown(f"""
     <div style="margin-bottom: 1.25rem;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
@@ -4535,7 +4535,7 @@ def render_score_bar(label: str, icon: str, score: float, bar_class: str, contri
 
 def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced", hardware: str = None):
     """Render SLO and workload impact cards with editable fields.
-    
+
     SLO defaults are set to MAX (showing all configs by default).
     User drags slider LEFT to tighten SLOs and filter down configs.
     Priority affects the MAX - low_latency has tighter max values.
@@ -4544,53 +4544,53 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
     research_data = load_research_slo_ranges()
     use_case_data = research_data.get('slo_ranges', {}).get(use_case, {}) if research_data else {}
     token_config = use_case_data.get('token_config', {'prompt': 512, 'output': 256})
-    
+
     # Get actual benchmark ranges for this use case's token config
     benchmark_ranges = get_benchmark_ranges_for_token_config(token_config['prompt'], token_config['output'])
-    
+
     # Get priority adjustment factors
     priority_adjustments = research_data.get('priority_adjustments', {}) if research_data else {}
     priority_factor = priority_adjustments.get(priority, {})
     ttft_factor = priority_factor.get('ttft_factor', 1.0)
     itl_factor = priority_factor.get('itl_factor', 1.0)
     e2e_factor = priority_factor.get('e2e_factor', 1.0)
-    
+
     # Get selected percentile (default P95)
     percentile_key = st.session_state.get('slo_percentile', 'p95')
-    
+
     # Calculate MAX values (adjusted by priority) - these are the DEFAULTS
     ttft_max_raw = benchmark_ranges.get(f'ttft_{percentile_key}_max', 270000)
     itl_max_raw = benchmark_ranges.get(f'itl_{percentile_key}_max', 430)
     e2e_max_raw = benchmark_ranges.get(f'e2e_{percentile_key}_max', 300000)
-    
+
     ttft_default = int(ttft_max_raw * ttft_factor)
     itl_default = int(itl_max_raw * itl_factor)
     e2e_default = int(e2e_max_raw * e2e_factor)
-    
+
     # Calculate QPS based on user count
     estimated_qps = max(1, user_count // 50)
-    
+
     # Use custom values if set, otherwise use MAX as default (shows all configs)
     # Ensure all values are integers for slider compatibility
     ttft = int(st.session_state.custom_ttft) if st.session_state.custom_ttft else ttft_default
     itl = int(st.session_state.custom_itl) if st.session_state.custom_itl else itl_default
     e2e = int(st.session_state.custom_e2e) if st.session_state.custom_e2e else e2e_default
     qps = int(st.session_state.custom_qps) if st.session_state.custom_qps else estimated_qps
-    
+
     # Section header - Technical Specifications
     st.markdown("""
     <div class="section-header" style="background: #000000; border: 1px solid rgba(255,255,255,0.2);">
         Set Technical Specifications
     </div>
     """, unsafe_allow_html=True)
-    
+
     # benchmark_ranges already fetched above for defaults
-    
+
     # Benchmark ranges table removed - user found it confusing
-    
+
     # Create 4 columns for all cards in one row
     col1, col2, col3, col4 = st.columns(4)
-    
+
     with col1:
         st.markdown("""
         <div class="slo-card">
@@ -4599,7 +4599,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             </div>
         </div>
         """, unsafe_allow_html=True)
-        
+
         # CSS for SLO inputs - white borders, white text, red arrows
         st.markdown("""
         <style>
@@ -4673,21 +4673,21 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             }
         </style>
         """, unsafe_allow_html=True)
-        
+
         # === ROW 1: Metric + Percentile dropdowns side by side ===
         metric_col, percentile_col = st.columns(2)
-        
+
         with metric_col:
             metric_options = ["TTFT", "ITL", "E2E"]
             # Use the widget key directly as the source of truth
             if 'metric_selector_val' not in st.session_state:
                 st.session_state.metric_selector_val = "TTFT"
-            
+
             # Get current index safely
             current_metric = st.session_state.metric_selector_val
             if current_metric not in metric_options:
                 current_metric = "TTFT"
-            
+
             primary_metric = st.selectbox(
                 "Filter by Metric",
                 metric_options,
@@ -4698,7 +4698,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             # Update our tracking variable
             st.session_state.metric_selector_val = primary_metric
             st.session_state.slo_primary_metric = primary_metric
-        
+
         with percentile_col:
             percentile_options = ["Mean", "P90", "P95", "P99"]
             percentile_map = {"Mean": "mean", "P90": "p90", "P95": "p95", "P99": "p99"}
@@ -4710,7 +4710,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             }
             reverse_map = {"mean": "Mean", "p90": "P90", "p95": "P95", "p99": "P99"}
             current_percentile_display = reverse_map.get(st.session_state.slo_percentile, "P95")
-            
+
             selected_percentile = st.selectbox(
                 "Percentile",
                 percentile_options,
@@ -4719,7 +4719,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
                 help=percentile_help.get(current_percentile_display, "Select percentile")
             )
             st.session_state.slo_percentile = percentile_map[selected_percentile]
-        
+
         # Load research data and get use-case specific ranges
         research_data = load_research_slo_ranges()
         use_case_ranges = research_data.get('slo_ranges', {}).get(use_case, {}) if research_data else {}
@@ -4727,10 +4727,10 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
         prompt_tokens = token_config.get('prompt', 512)
         output_tokens = token_config.get('output', 256)
         benchmark_ranges = get_benchmark_ranges_for_token_config(prompt_tokens, output_tokens)
-        
+
         percentile_key = st.session_state.slo_percentile
         percentile_display = selected_percentile.upper() if selected_percentile != "Mean" else "Mean"
-        
+
         # Get ranges for this percentile
         ttft_min = int(benchmark_ranges.get(f'ttft_{percentile_key}_min', 15))
         ttft_max = int(benchmark_ranges.get(f'ttft_{percentile_key}_max', 270000))
@@ -4738,7 +4738,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
         itl_max = int(benchmark_ranges.get(f'itl_{percentile_key}_max', 430))
         e2e_min = int(benchmark_ranges.get(f'e2e_{percentile_key}_min', 800))
         e2e_max = int(benchmark_ranges.get(f'e2e_{percentile_key}_max', 300000))
-        
+
         # Initialize filter checkboxes
         if 'filter_ttft' not in st.session_state:
             st.session_state.filter_ttft = False
@@ -4746,7 +4746,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             st.session_state.filter_itl = False
         if 'filter_e2e' not in st.session_state:
             st.session_state.filter_e2e = False
-        
+
         # === PRIMARY METRIC INPUT (number input with +/-) ===
         # Initialize widget keys DIRECTLY - Streamlit manages state via keys
         # DO NOT use 'value' parameter when using 'key' - causes reset bug!
@@ -4756,12 +4756,12 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             st.session_state.input_itl = itl_max
         if 'input_e2e' not in st.session_state:
             st.session_state.input_e2e = e2e_max
-        
+
         st.markdown(f'''<div style="margin-top: 1rem; margin-bottom: 0.25rem;">
             <span style="color: #EE0000; font-weight: 700; font-size: 0.95rem;">● {primary_metric} ({percentile_display}) &lt;</span>
             <span style="color: rgba(255,255,255,0.5); font-size: 0.75rem; float: right;">Primary filter</span>
         </div>''', unsafe_allow_html=True)
-        
+
         if primary_metric == "TTFT":
             # Let Streamlit manage via key - no 'value' parameter!
             st.number_input("TTFT", min_value=ttft_min, max_value=ttft_max, step=100, key="input_ttft", label_visibility="collapsed")
@@ -4775,12 +4775,12 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             st.number_input("E2E", min_value=e2e_min, max_value=e2e_max, step=1000, key="input_e2e", label_visibility="collapsed")
             st.session_state.custom_e2e = st.session_state.input_e2e
             st.markdown(f'<div style="font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-top: -0.5rem;">Range: {e2e_min:,} - {e2e_max:,} ms</div>', unsafe_allow_html=True)
-        
+
         # === OPTIONAL SECONDARY FILTERS ===
         st.markdown('''<div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.15);">
             <span style="color: rgba(255,255,255,0.6); font-size: 0.8rem;">Additional filters (click to enable):</span>
         </div>''', unsafe_allow_html=True)
-        
+
         # Show checkboxes + number inputs for non-primary metrics
         # Initialize secondary input keys
         if 'input_ttft_sec' not in st.session_state:
@@ -4789,7 +4789,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             st.session_state.input_itl_sec = itl_max
         if 'input_e2e_sec' not in st.session_state:
             st.session_state.input_e2e_sec = e2e_max
-        
+
         if primary_metric != "TTFT":
             filter_ttft = st.checkbox(f"TTFT ({percentile_display})", value=st.session_state.filter_ttft, key="chk_ttft")
             st.session_state.filter_ttft = filter_ttft
@@ -4798,7 +4798,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
                 st.session_state.custom_ttft = st.session_state.input_ttft_sec
             else:
                 st.session_state.custom_ttft = ttft_max
-        
+
         if primary_metric != "ITL":
             filter_itl = st.checkbox(f"ITL ({percentile_display})", value=st.session_state.filter_itl, key="chk_itl")
             st.session_state.filter_itl = filter_itl
@@ -4807,7 +4807,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
                 st.session_state.custom_itl = st.session_state.input_itl_sec
             else:
                 st.session_state.custom_itl = itl_max
-        
+
         if primary_metric != "E2E":
             filter_e2e = st.checkbox(f"E2E ({percentile_display})", value=st.session_state.filter_e2e, key="chk_e2e")
             st.session_state.filter_e2e = filter_e2e
@@ -4816,7 +4816,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
                 st.session_state.custom_e2e = st.session_state.input_e2e_sec
             else:
                 st.session_state.custom_e2e = e2e_max
-    
+
     with col2:
         st.markdown("""
         <div class="slo-card">
@@ -4825,7 +4825,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             </div>
         </div>
         """, unsafe_allow_html=True)
-        
+
         # Load token config and workload data from research
         research_data = load_research_slo_ranges()
         use_case_ranges = research_data.get('slo_ranges', {}).get(use_case, {}) if research_data else {}
@@ -4842,10 +4842,10 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
         default_qps = estimated_qps  # This is the research-based default
         new_qps = st.number_input("Expected RPS", value=min(qps, 10000000), min_value=1, max_value=10000000, step=1, key="edit_qps", label_visibility="collapsed")
         st.markdown(f'<div style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: -0.75rem; margin-bottom: 0.5rem;">Expected RPS: <span style="color: white; font-weight: 700; font-size: 1rem;">{new_qps}</span> <span style="color: rgba(255,255,255,0.4); font-size: 0.75rem;">(default: {default_qps})</span></div>', unsafe_allow_html=True)
-        
+
         if new_qps != qps:
             st.session_state.custom_qps = new_qps
-        
+
         # RPS change warning - show implications of changing from research-based default
         if new_qps > default_qps * 2:
             qps_ratio = new_qps / max(default_qps, 1)
@@ -4908,10 +4908,10 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
 
         # 5. Informational messages from research data - black background, no emojis
         workload_messages = get_workload_insights(use_case, new_qps, user_count)
-        
+
         for icon, color, text, severity in workload_messages[:3]:  # Limit to 3 for space
             st.markdown(f'<div style="font-size: 0.85rem; color: white; padding: 0.4rem 0.5rem; line-height: 1.4; background: #000000; border-radius: 6px; margin: 4px 0;">{text}</div>', unsafe_allow_html=True)
-    
+
     with col3:
         # Task Datasets - show which benchmarks are used for this use case
         # Each entry: (name, weight, color, tooltip_description) - all black background
@@ -4964,9 +4964,9 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
                 ("MMLU-Pro", 20, "Knowledge (12,032 questions)"),
             ],
         }
-        
+
         datasets = TASK_DATASETS.get(use_case, TASK_DATASETS["chatbot_conversational"])
-        
+
         st.markdown("""
         <div class="slo-card">
             <div class="slo-header">
@@ -4974,7 +4974,7 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
             </div>
         </div>
         """, unsafe_allow_html=True)
-        
+
         # Display datasets with weights - black background, white text for visibility
         datasets_html = '<div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 8px; margin-top: 0.5rem;">'
         for item in datasets:
@@ -5001,24 +5001,24 @@ def render_slo_cards(use_case: str, user_count: int, priority: str = "balanced",
         </div>
         </div>
         """, unsafe_allow_html=True)
-    
+
         # Build items - always show priority
         items = []
-    
+
         # Always show priority (including balanced) - black background, white text
         priority_display = priority.replace('_', ' ').title() if priority else "Balanced"
         items.append(("", "Priority", priority_display))
-    
+
         # Hardware - only show if user explicitly mentioned it
         if hardware and hardware not in ["Any GPU", "Any", None, ""]:
             items.append(("", "Hardware", hardware))
-    
+
         # Build content HTML - black background with white text
         items_html = "".join([
             f'<div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">{icon} {label}</span><span style="color: white; font-weight: 700; font-size: 0.9rem; background: #000000; padding: 4px 10px; border-radius: 6px;">{value}</span></div>'
             for icon, label, value in items
         ])
-        
+
         full_html = f'<div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 8px; margin-top: 0.5rem;">{items_html}</div>'
         st.markdown(full_html, unsafe_allow_html=True)
 
@@ -5033,14 +5033,14 @@ def show_winner_details_dialog():
     winner = st.session_state.get('balanced_winner') or st.session_state.get('winner_recommendation')
     priority = st.session_state.get('winner_priority', 'balanced')
     extraction = st.session_state.get('winner_extraction', {})
-    
+
     if not winner:
         st.warning("No winner data available.")
         return
-    
+
     # Render the winner details
     _render_winner_details(winner, priority, extraction)
-    
+
     # Close button
     if st.button("Close", key="close_dialog_btn", use_container_width=True):
         st.session_state.show_winner_dialog = False
@@ -5055,10 +5055,10 @@ def show_winner_details_dialog():
 def show_category_dialog():
     """Show top 5 models for a category with performance data."""
     category = st.session_state.get('explore_category', 'balanced')
-    
+
     # Get use case for context
     use_case = st.session_state.get("detected_use_case", "chatbot_conversational")
-    
+
     # Token config per use case (for throughput calculation)
     USE_CASE_OUTPUT_TOKENS = {
         "chatbot_conversational": 256,
@@ -5072,7 +5072,7 @@ def show_category_dialog():
         "research_legal_analysis": 1536,
     }
     output_tokens = USE_CASE_OUTPUT_TOKENS.get(use_case, 256)
-    
+
     # Category config - Red Hat theme colors (no emojis)
     category_config = {
         "balanced": {"title": "Balanced - Top 5", "color": "#EE0000", "field": "final", "top5_key": "top5_balanced"},
@@ -5080,10 +5080,10 @@ def show_category_dialog():
         "latency": {"title": "Best Latency - Top 5", "color": "#EE0000", "field": "latency", "top5_key": "top5_latency"},
         "cost": {"title": "Best Cost - Top 5", "color": "#EE0000", "field": "cost", "top5_key": "top5_cost"},
     }
-    
+
     config = category_config.get(category, category_config["balanced"])
     top5_list = st.session_state.get(config["top5_key"], [])
-    
+
     # Red Hat theme CSS
     st.markdown("""
     <style>
@@ -5105,7 +5105,7 @@ def show_category_dialog():
         }
     </style>
     """, unsafe_allow_html=True)
-    
+
     # Header - Red Hat theme
     st.markdown(f"""
     <div style="background: #EE0000; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem;">
@@ -5122,7 +5122,7 @@ def show_category_dialog():
             st.session_state.show_category_dialog = False
             st.rerun()
         return
-    
+
     # Helper to get scores
     def get_model_scores(rec):
         backend_scores = rec.get("scores", {}) or {}
@@ -5138,13 +5138,13 @@ def show_category_dialog():
             "complexity": backend_scores.get("complexity_score", ui_breakdown.get("capacity_score", 0)),
             "final": backend_scores.get("balanced_score", rec.get("final_score", 0)),
         }
-    
+
     # Helper to calculate throughput: output_tokens / (E2E_ms / 1000) = output_tokens * 1000 / E2E_ms
     def calc_throughput(e2e_ms, output_toks):
         if isinstance(e2e_ms, str) or e2e_ms is None or e2e_ms <= 0:
             return None
         return output_toks * 1000 / e2e_ms  # tok/s
-    
+
     # Render each model in the top 5
     for i, rec in enumerate(top5_list):
         scores = get_model_scores(rec)
@@ -5154,40 +5154,40 @@ def show_category_dialog():
         hw_count = gpu_cfg.get('gpu_count', rec.get('hardware_count', 1))
         hw_display = f"{hw_count}x {hw_type}"
         tp = gpu_cfg.get('tensor_parallel', 1)
-        
+
         # Get selected percentile from session state
         selected_percentile = st.session_state.get('slo_percentile', 'p95')
         percentile_suffix = selected_percentile  # mean, p90, p95, p99
         percentile_label = selected_percentile.upper() if selected_percentile != 'mean' else 'Mean'
-        
+
         # Get benchmark metrics with all percentiles (from backend)
         benchmark_metrics = rec.get('benchmark_metrics', {}) or {}
-        
+
         # Get values for selected percentile
         ttft = benchmark_metrics.get(f'ttft_{percentile_suffix}', rec.get('predicted_ttft_p95_ms', 'N/A'))
         itl = benchmark_metrics.get(f'itl_{percentile_suffix}', rec.get('predicted_itl_p95_ms', 'N/A'))
         e2e = benchmark_metrics.get(f'e2e_{percentile_suffix}', rec.get('predicted_e2e_p95_ms', 'N/A'))
         tps = benchmark_metrics.get(f'tps_{percentile_suffix}', 0)
-        
+
         # Use TPS from benchmark if available, else calculate from E2E
         if tps and tps > 0:
             throughput_display = f"{tps:.0f} tok/s"
         else:
             throughput = calc_throughput(e2e, output_tokens)
             throughput_display = f"{throughput:.0f} tok/s" if throughput else "N/A"
-        
+
         highlight_score = scores.get(config["field"], 0)
         # Red Hat theme rank colors: red for #1, gray shades for others
         rank_colors = ["#EE0000", "#666666", "#555555", "#444444", "#333333"]
         rank_color = rank_colors[i] if i < 5 else "#333333"
         rank_text_color = "#ffffff"  # Always white text
-        
+
         st.markdown(f"""
-        <div style="background: linear-gradient(135deg, rgba(30,30,30,0.95), rgba(20,20,20,0.95)); 
+        <div style="background: linear-gradient(135deg, rgba(30,30,30,0.95), rgba(20,20,20,0.95));
                     border: 1px solid #333333; border-radius: 12px; padding: 1rem; margin-bottom: 0.75rem;">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
                 <div style="display: flex; align-items: center; gap: 0.75rem;">
-                    <span style="background: {rank_color}; color: {rank_text_color}; font-weight: 800; padding: 0.25rem 0.6rem; 
+                    <span style="background: {rank_color}; color: {rank_text_color}; font-weight: 800; padding: 0.25rem 0.6rem;
                                 border-radius: 6px; font-size: 0.85rem;">#{i+1}</span>
                     <div>
                         <div style="color: white; font-weight: 700; font-size: 1.05rem;">{model_name}</div>
@@ -5199,7 +5199,7 @@ def show_category_dialog():
                     <div style="color: rgba(255,255,255,0.4); font-size: 0.65rem; text-transform: uppercase;">FINAL</div>
                 </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-bottom: 0.75rem; padding: 0.5rem; 
+            <div style="display: flex; gap: 1rem; margin-bottom: 0.75rem; padding: 0.5rem;
                         background: rgba(0,0,0,0.4); border-radius: 8px;">
                 <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">Acc: {scores['accuracy']:.0f}</span>
                 <span style="color: rgba(255,255,255,0.7); font-size: 0.8rem;">Lat: {scores['latency']:.0f}</span>
@@ -5226,7 +5226,7 @@ def show_category_dialog():
             </div>
         </div>
         """, unsafe_allow_html=True)
-    
+
     # Close button - Red Hat theme
     st.markdown("<div style='margin-top: 1rem;'></div>", unsafe_allow_html=True)
     if st.button("Close", key="close_cat_dialog", use_container_width=True):
@@ -5237,8 +5237,6 @@ def show_category_dialog():
 @st.dialog("All Recommendation Options", width="large")
 def show_full_table_dialog():
     """Show the full recommendations table with all categories."""
-    import pandas as pd
-
     ranked_response = st.session_state.get('ranked_response')
 
     if not ranked_response:
@@ -5453,90 +5451,90 @@ def main():
         st.session_state.show_winner_dialog = False
         st.session_state.show_category_dialog = False
         show_full_table_dialog()
-    
+
     # Load models
     if st.session_state.models_df is None:
         st.session_state.models_df = load_206_models()
     models_df = st.session_state.models_df
-    
+
     # Default priority
     priority = "balanced"
-    
+
     # Main Content - Compact hero
     render_hero()
-    
+
     # Tab-based navigation (4 tabs)
     tab1, tab2, tab3, tab4 = st.tabs(["Define Use Case", "Technical Specifications", "Recommendations", "About"])
-    
+
     with tab1:
         render_use_case_input_tab(priority, models_df)
-    
+
     with tab2:
         render_technical_specs_tab(priority, models_df)
-    
+
     with tab3:
         render_results_tab(priority, models_df)
-    
+
     with tab4:
         render_about_section(models_df)
 
 
 def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
     """Tab 1: Use case input interface."""
-    
+
     st.markdown('<div class="section-header">Describe your use case or select from 9 predefined scenarios</div>', unsafe_allow_html=True)
-    
+
     # Row 1: 5 task buttons
     col1, col2, col3, col4, col5 = st.columns(5)
-    
+
     with col1:
         if st.button("Chat Completion", use_container_width=True, key="task_chat"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "Customer service chatbot for 30 users."
-    
+
     with col2:
         if st.button("Code Completion", use_container_width=True, key="task_code"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "IDE code completion tool for 30 developers."
-    
+
     with col3:
         if st.button("Document Q&A", use_container_width=True, key="task_rag"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "Document Q&A system for enterprise knowledge base, 30 users."
-    
+
     with col4:
         if st.button("Summarization", use_container_width=True, key="task_summ"):
             # With priority (cost-effective) to show filtering
             st.session_state.user_input = "News article summarization for 30 users, cost-effective solution preferred."
-    
+
     with col5:
         if st.button("Legal Analysis", use_container_width=True, key="task_legal"):
             # With priority (accuracy) to show filtering
             st.session_state.user_input = "Legal document analysis for 30 lawyers, accuracy is critical."
-    
+
     # Row 2: 4 more task buttons
     col6, col7, col8, col9 = st.columns(4)
-    
+
     with col6:
         if st.button("Translation", use_container_width=True, key="task_trans"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "Multi-language translation service for 30 users."
-    
+
     with col7:
         if st.button("Content Generation", use_container_width=True, key="task_content"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "Content generation tool for marketing team, 30 users."
-    
+
     with col8:
         if st.button("Long Doc Summary", use_container_width=True, key="task_longdoc"):
             # With priority (accuracy) to show filtering
             st.session_state.user_input = "Long document summarization for research papers, 30 researchers, accuracy matters."
-    
+
     with col9:
         if st.button("Code Generation", use_container_width=True, key="task_codegen"):
             # Simple prompt - no priority, no hardware = show all configs
             st.session_state.user_input = "Full code generation tool for implementing features, 30 developers."
-    
+
     # Input area with validation
     st.markdown('<div class="input-container">', unsafe_allow_html=True)
     user_input = st.text_area(
@@ -5548,11 +5546,11 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
         label_visibility="collapsed"
     )
     st.markdown('</div>', unsafe_allow_html=True)
-    
+
     # Show character count - white text
     char_count = len(user_input) if user_input else 0
     st.markdown(f'<div style="text-align: right; font-size: 0.75rem; color: white; margin-top: -0.5rem;">{char_count}/2000 characters</div>', unsafe_allow_html=True)
-    
+
     col1, col2, col3 = st.columns([1.5, 1, 2])
     with col1:
         # Disable button if input is too short
@@ -5563,14 +5561,14 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
     with col2:
         if st.button("Clear", use_container_width=True):
             # Complete session state reset
-            for key in ['user_input', 'extraction_result', 'recommendation_result', 
+            for key in ['user_input', 'extraction_result', 'recommendation_result',
                        'extraction_approved', 'slo_approved', 'edited_extraction',
                        'custom_ttft', 'custom_itl', 'custom_e2e', 'custom_qps', 'used_priority']:
                 if key in st.session_state:
                     del st.session_state[key]
             st.session_state.user_input = ""
             st.rerun()
-    
+
     # Input validation before analysis
     if analyze_clicked and user_input and len(user_input.strip()) >= 10:
         st.session_state.user_input = user_input
@@ -5579,17 +5577,17 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
         st.session_state.slo_approved = None
         st.session_state.recommendation_result = None
         st.session_state.edited_extraction = None
-        
+
         # Show progress bar for better UX
         progress_container = st.empty()
         with progress_container:
             progress_bar = st.progress(0, text="Initializing extraction...")
-            
+
         try:
             progress_bar.progress(20, text="Analyzing input text...")
             extraction = extract_business_context(user_input)
             progress_bar.progress(80, text="Extraction complete!")
-            
+
             if extraction:
                 # Clear old recommendation data when new extraction is done
                 st.session_state.recommendation_result = None
@@ -5597,7 +5595,7 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
                 st.session_state.slo_approved = None
                 st.session_state.edited_extraction = None
                 st.session_state.ranked_response = None
-                
+
                 # Store new extraction
                 st.session_state.extraction_result = extraction
                 st.session_state.used_priority = extraction.get("priority", priority)
@@ -5606,7 +5604,7 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
             else:
                 st.error("Could not extract business context. Please try rephrasing your input.")
                 progress_bar.empty()
-                
+
         except Exception as e:
             st.error(f"An error occurred during analysis. Please try again.")
             progress_bar.empty()
@@ -5615,24 +5613,24 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
             import time
             time.sleep(0.5)
             progress_container.empty()
-    
+
     # Get the priority that was actually used
     used_priority = st.session_state.get("used_priority", priority)
-    
+
     # Show extraction with approval if extraction exists but not approved
     if st.session_state.extraction_result and st.session_state.extraction_approved is None:
         render_extraction_with_approval(st.session_state.extraction_result, used_priority, models_df)
         return
-    
+
     # If editing, show edit form
     if st.session_state.extraction_approved == False:
         render_extraction_edit_form(st.session_state.extraction_result, models_df)
         return
-    
+
     # If approved, show message to proceed to Technical Specifications tab
     if st.session_state.extraction_approved == True:
         render_extraction_result(st.session_state.extraction_result, used_priority)
-        
+
         # Left-aligned completion banner and button
         col_btns, col_space = st.columns([2, 2])
         with col_btns:
@@ -5654,7 +5652,7 @@ def render_use_case_input_tab(priority: str, models_df: pd.DataFrame):
 def render_technical_specs_tab(priority: str, models_df: pd.DataFrame):
     """Tab 2: Technical Specifications (SLO targets and workload settings)."""
     used_priority = st.session_state.get("used_priority", priority)
-    
+
     # Check if extraction is approved first
     if not st.session_state.extraction_approved:
         st.markdown("""
@@ -5664,12 +5662,12 @@ def render_technical_specs_tab(priority: str, models_df: pd.DataFrame):
         </div>
         """, unsafe_allow_html=True)
         return
-    
+
     final_extraction = st.session_state.edited_extraction or st.session_state.extraction_result or {}
-    
+
     # Show SLO section
     render_slo_with_approval(final_extraction, used_priority, models_df)
-    
+
     # If SLO approved, show navigation message
     if st.session_state.slo_approved == True:
         # Left-aligned completion banner and button
@@ -5693,7 +5691,7 @@ def render_technical_specs_tab(priority: str, models_df: pd.DataFrame):
 def render_results_tab(priority: str, models_df: pd.DataFrame):
     """Tab 3: Results display - Best Model Recommendations."""
     used_priority = st.session_state.get("used_priority", priority)
-    
+
     # Check if SLO is approved
     if not st.session_state.slo_approved:
         if not st.session_state.extraction_approved:
@@ -5712,9 +5710,9 @@ def render_results_tab(priority: str, models_df: pd.DataFrame):
             </div>
             """, unsafe_allow_html=True)
         return
-    
+
     final_extraction = st.session_state.edited_extraction or st.session_state.extraction_result or {}
-    
+
     # Generate recommendations if needed
     if not st.session_state.recommendation_result:
         business_context = {
@@ -5727,7 +5725,7 @@ def render_results_tab(priority: str, models_df: pd.DataFrame):
             recommendation = get_enhanced_recommendation(business_context)
         if recommendation:
             st.session_state.recommendation_result = recommendation
-    
+
     if st.session_state.recommendation_result:
         render_recommendation_result(st.session_state.recommendation_result, used_priority, final_extraction)
 
@@ -5735,11 +5733,11 @@ def render_results_tab(priority: str, models_df: pd.DataFrame):
 def render_extraction_result(extraction: dict, priority: str):
     """Render beautiful extraction results."""
     st.markdown('<div class="section-header">Extracted Business Context</div>', unsafe_allow_html=True)
-    
+
     use_case = extraction.get("use_case", "unknown")
     user_count = extraction.get("user_count", 0)
     hardware = extraction.get("hardware")
-    
+
     st.markdown(f"""
     <div class="extraction-card">
         <div class="extraction-grid">
@@ -5775,11 +5773,11 @@ def render_extraction_result(extraction: dict, priority: str):
 def render_extraction_with_approval(extraction: dict, priority: str, models_df: pd.DataFrame):
     """Render extraction results with YES/NO approval buttons."""
     st.markdown('<div class="section-header">Extracted Business Context</div>', unsafe_allow_html=True)
-    
+
     use_case = extraction.get("use_case", "unknown")
     user_count = extraction.get("user_count", 0)
     hardware = extraction.get("hardware")
-    
+
     st.markdown(f"""
     <div class="extraction-card" style="border: 2px solid #EE0000;">
         <div class="extraction-grid">
@@ -5810,10 +5808,10 @@ def render_extraction_with_approval(extraction: dict, priority: str, models_df: 
         </div>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # Approval question
     st.markdown("""
-    <div style="background: #000000; 
+    <div style="background: #000000;
                 padding: 1.25rem; border-radius: 1rem; margin: 1.5rem 0; text-align: center;
                 border: 1px solid rgba(255, 255, 255, 0.2);">
         <p style="color: white; font-size: 1.2rem; font-weight: 600; margin: 0;">
@@ -5824,7 +5822,7 @@ def render_extraction_with_approval(extraction: dict, priority: str, models_df: 
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
         if st.button("Yes, Continue", type="primary", use_container_width=True, key="approve_extraction"):
@@ -5846,7 +5844,7 @@ def render_extraction_with_approval(extraction: dict, priority: str, models_df: 
 def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
     """Render editable form for extraction correction."""
     st.markdown('<div class="section-header">Edit Business Context</div>', unsafe_allow_html=True)
-    
+
     # CSS to make form inputs visible
     st.markdown("""
     <style>
@@ -5896,7 +5894,7 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
         <p style="color: white; margin: 0;">Review and adjust the extracted values below, then click "Apply Changes" to continue.</p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # Use case dropdown
     use_cases = [
         "chatbot_conversational", "code_completion", "code_generation_detailed",
@@ -5914,10 +5912,10 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
         "content_generation": "Content Generation",
         "research_legal_analysis": "Research / Legal Analysis"
     }
-    
+
     current_use_case = extraction.get("use_case", "chatbot_conversational")
     current_idx = use_cases.index(current_use_case) if current_use_case in use_cases else 0
-    
+
     col1, col2 = st.columns(2)
     with col1:
         new_use_case = st.selectbox(
@@ -5927,7 +5925,7 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
             format_func=lambda x: use_case_labels.get(x, x),
             key="edit_use_case"
         )
-        
+
         new_user_count = st.number_input(
             "User Count",
             min_value=1,
@@ -5936,7 +5934,7 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
             step=100,
             key="edit_user_count"
         )
-    
+
     with col2:
         priorities = ["balanced", "low_latency", "cost_saving", "high_accuracy", "high_throughput"]
         priority_labels = {
@@ -5948,7 +5946,7 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
         }
         current_priority = extraction.get("priority", "balanced")
         priority_idx = priorities.index(current_priority) if current_priority in priorities else 0
-        
+
         new_priority = st.selectbox(
             "Priority",
             priorities,
@@ -5956,20 +5954,20 @@ def render_extraction_edit_form(extraction: dict, models_df: pd.DataFrame):
             format_func=lambda x: priority_labels.get(x, x),
             key="edit_priority"
         )
-        
+
         hardware_options = ["Any GPU", "H100", "A100", "A10G", "L4", "T4"]
         current_hardware = extraction.get("hardware") or "Any GPU"
         hw_idx = hardware_options.index(current_hardware) if current_hardware in hardware_options else 0
-        
+
         new_hardware = st.selectbox(
             "Hardware",
             hardware_options,
             index=hw_idx,
             key="edit_hardware"
         )
-    
+
     st.markdown("<br>", unsafe_allow_html=True)
-    
+
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Apply Changes", type="primary", use_container_width=True, key="apply_edit"):
@@ -5993,23 +5991,23 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
     use_case = extraction.get("use_case", "chatbot_conversational")
     user_count = extraction.get("user_count", 1000)
     hardware = extraction.get("hardware")
-    
+
     # SLO and Impact Cards - all 4 cards in one row
     render_slo_cards(use_case, user_count, priority, hardware)
-    
+
     # ==========================================================================
     # VALIDATE SLO VALUES - Use case-specific ranges (same as sliders)
     # ==========================================================================
     research_data = load_research_slo_ranges()
-    
+
     # Get use-case specific token config and benchmark ranges
     use_case_data = research_data.get('slo_ranges', {}).get(use_case, {}) if research_data else {}
     token_config = use_case_data.get('token_config', {'prompt': 512, 'output': 256})
     benchmark_ranges = get_benchmark_ranges_for_token_config(token_config['prompt'], token_config['output'])
-    
+
     # Get selected percentile (same as sliders)
     percentile_key = st.session_state.get('slo_percentile', 'p95')
-    
+
     # Get ranges for this specific percentile and use case
     ttft_min = int(benchmark_ranges.get(f'ttft_{percentile_key}_min', 15))
     ttft_max = int(benchmark_ranges.get(f'ttft_{percentile_key}_max', 270000))
@@ -6017,12 +6015,12 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
     itl_max = int(benchmark_ranges.get(f'itl_{percentile_key}_max', 430))
     e2e_min = int(benchmark_ranges.get(f'e2e_{percentile_key}_min', 800))
     e2e_max = int(benchmark_ranges.get(f'e2e_{percentile_key}_max', 300000))
-    
+
     # Get current SLO values from session state (these are from the sliders)
     current_ttft = int(st.session_state.get('edit_ttft', ttft_max))
     current_itl = int(st.session_state.get('edit_itl', itl_max))
     current_e2e = int(st.session_state.get('edit_e2e', e2e_max))
-    
+
     # Validate - values from sliders should always be valid since sliders enforce bounds
     # But check anyway in case of edge cases
     validation_errors = []
@@ -6032,9 +6030,9 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
         validation_errors.append(f"ITL must be between {itl_min}-{itl_max}ms")
     if current_e2e < e2e_min or current_e2e > e2e_max:
         validation_errors.append(f"E2E must be between {e2e_min:,}-{e2e_max:,}ms")
-    
+
     is_valid = len(validation_errors) == 0
-    
+
     # Proceed button
     st.markdown("<br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
@@ -6042,7 +6040,7 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
         if not is_valid:
             # Show validation errors
             st.markdown(f"""
-            <div style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.5); 
+            <div style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.5);
                         border-radius: 8px; padding: 0.75rem; margin-bottom: 0.75rem; text-align: center;">
                 <div style="color: #ef4444; font-weight: 600; font-size: 0.9rem;">⚠️ Invalid SLO Values</div>
                 <div style="color: rgba(255,255,255,0.8); font-size: 0.8rem; margin-top: 0.25rem;">
@@ -6050,7 +6048,7 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
                 </div>
             </div>
             """, unsafe_allow_html=True)
-        
+
         # Button disabled if invalid
         if st.button("Generate Recommendations", type="primary", use_container_width=True, key="generate_recs", disabled=not is_valid):
             st.session_state.slo_approved = True
@@ -6059,7 +6057,7 @@ def render_slo_with_approval(extraction: dict, priority: str, models_df: pd.Data
 
 def render_recommendation_result(result: dict, priority: str, extraction: dict):
     """Render beautiful recommendation results with Top 5 table."""
-    
+
     # === Ranked Hardware Recommendations (Backend API) ===
     # Gather data from extraction (handle None case)
     if extraction is None:
@@ -6070,7 +6068,7 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
     # Get SLO targets from RESEARCH DATA (not from extraction result!)
     # This ensures we use proper research-backed SLO ranges
     slo_targets = get_slo_targets_for_use_case(use_case, priority)
-    
+
     if not slo_targets:
         # Fallback to loose defaults if research data unavailable
         slo_targets = {
@@ -6084,12 +6082,12 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
     token_config = slo_targets.get("token_config", {"prompt": 512, "output": 256})
     prompt_tokens = token_config.get("prompt", 512)
     output_tokens = token_config.get("output", 256)
-        
+
     # Get SLO target values (use max as the target - shows all configs by default)
     ttft_target = slo_targets.get("ttft_target", {}).get("max", 150000)
     itl_target = slo_targets.get("itl_target", {}).get("max", 300)
     e2e_target = slo_targets.get("e2e_target", {}).get("max", 200000)
-        
+
     # Calculate expected QPS from user count (rough estimate: ~1 query per 100 users per second)
     expected_qps = max(1.0, user_count / 100.0)
 
@@ -6104,7 +6102,7 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
 
     # Get selected percentile from session state
     selected_percentile = st.session_state.get('slo_percentile', 'p95')
-    
+
     # Fetch ranked recommendations from backend (using ALL 28 PostgreSQL models)
     with st.spinner("Fetching ranked recommendations from backend..."):
         ranked_response = fetch_ranked_recommendations(
@@ -6127,10 +6125,10 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
     if ranked_response:
         # NOTE: Table removed from main view - now only shown in "Explore More Options" dialog
         # render_ranked_recommendations(ranked_response)
-        
+
         # Store ranked response for winner details and for the Explore More Options dialog
         st.session_state.ranked_response = ranked_response
-        
+
         # Get the Balanced winner for the Explore button
         balanced_recs = ranked_response.get("balanced", [])
         if balanced_recs:
@@ -6154,21 +6152,21 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
             st.warning("No recommendations found. Try adjusting your requirements.")
             return
         winner = recommendations[0]
-    
+
     # Store winner for explore dialog
     st.session_state.winner_recommendation = winner
     st.session_state.winner_priority = priority
     st.session_state.winner_extraction = extraction
-    
+
     # Render the 4 "Best" cards with Explore button
     st.markdown("---")
-    
+
     # Get all recommendations for the cards
     all_recs = []
     for cat in ["balanced", "best_accuracy", "lowest_cost", "lowest_latency", "simplest"]:
         cat_recs = st.session_state.ranked_response.get(cat, []) if st.session_state.ranked_response else []
         all_recs.extend(cat_recs)
-    
+
     # Remove duplicates by model+hardware
     seen = set()
     unique_recs = []
@@ -6180,10 +6178,10 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
         if key not in seen:
             seen.add(key)
             unique_recs.append(rec)
-    
+
     if unique_recs:
         render_top5_table(unique_recs, priority)
-    
+
     # === EXPLORE MORE OPTIONS BUTTON (centered) ===
     st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
     col_left, col_center, col_right = st.columns([1, 2, 1])
@@ -6195,22 +6193,22 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
             # Then open this dialog
             st.session_state.show_full_table_dialog = True
             st.rerun()
-    
+
     # === MODIFY SLOs & RE-RUN SECTION ===
     st.markdown("---")
     st.markdown("""
-    <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(166, 124, 0, 0.05)); 
+    <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(166, 124, 0, 0.05));
                 padding: 1rem; border-radius: 0.75rem; border: 1px solid rgba(255, 255, 255, 0.2); margin-top: 1rem; background: #000000;">
         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
             <span style="color: white; font-weight: 700; font-size: 1rem;">Want Different Results?</span>
         </div>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.85rem; margin: 0;">
-            Adjust SLO targets above to find models with different latency/performance trade-offs. 
+            Adjust SLO targets above to find models with different latency/performance trade-offs.
             Stricter SLOs = fewer models, Relaxed SLOs = more options.
             </p>
         </div>
         """, unsafe_allow_html=True)
-        
+
     # Show buttons to go back or start new case
     col_back, col_new, col_spacer = st.columns([1, 1, 2])
     with col_back:
@@ -6240,7 +6238,7 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
             </script>
             """, height=0)
             st.rerun()
-    
+
     with col_new:
         if st.button("New Case", key="new_case_btn", type="secondary", use_container_width=True):
             # Complete session state reset - start fresh from Tab 1
@@ -6268,7 +6266,7 @@ def render_recommendation_result(result: dict, priority: str, extraction: dict):
 
 def _render_winner_details(winner: dict, priority: str, extraction: dict):
     """Render detailed winner information inside the expander."""
-    
+
     # Dark theme styling for popup dialog - including header
     st.markdown("""
     <style>
@@ -6283,7 +6281,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             background: #0d1117 !important;
             background-color: #0d1117 !important;
         }
-        
+
         /* Dialog header area */
         [data-testid="stDialog"] header,
         [data-testid="stDialog"] [data-testid="stModalHeader"],
@@ -6292,25 +6290,25 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             background: #0d1117 !important;
             background-color: #0d1117 !important;
         }
-        
+
         /* Dialog title */
         [data-testid="stDialog"] [data-testid="stModalHeader"] span,
         [role="dialog"] header span {
             color: #D4AF37 !important;
         }
-        
+
         /* All text in dialog */
         [data-testid="stDialog"] .stMarkdown,
-        [data-testid="stDialog"] p, 
+        [data-testid="stDialog"] p,
         [data-testid="stDialog"] span,
         [data-testid="stDialog"] div,
-        [data-testid="stDialog"] h1, 
-        [data-testid="stDialog"] h2, 
+        [data-testid="stDialog"] h1,
+        [data-testid="stDialog"] h2,
         [data-testid="stDialog"] h3,
         [data-testid="stDialog"] label {
             color: #f0f6fc !important;
         }
-        
+
         /* Close button */
         [data-testid="stDialog"] button[kind="secondary"],
         [data-testid="stDialog"] [data-testid="stBaseButton-secondary"] {
@@ -6318,7 +6316,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             color: #D4AF37 !important;
             border: 1px solid rgba(212, 175, 55, 0.4) !important;
         }
-        
+
         /* Section headers in dialog */
         [data-testid="stDialog"] .section-header {
             background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(6, 182, 212, 0.2)) !important;
@@ -6326,7 +6324,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
         }
     </style>
             """, unsafe_allow_html=True)
-            
+
     # Handle both backend format (scores) and UI format (score_breakdown)
     backend_scores = winner.get("scores", {}) or {}
     ui_breakdown = winner.get("score_breakdown", {}) or {}
@@ -6336,32 +6334,32 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
         "cost_score": backend_scores.get("price_score", ui_breakdown.get("cost_score", 0)),
         "capacity_score": backend_scores.get("complexity_score", ui_breakdown.get("capacity_score", 0)),
     }
-    
+
     # === 📋 FINAL RECOMMENDATION BOX (Schema-Aligned Clean Format) ===
     st.markdown('<div class="section-header" style="background: #1a1a1a; border: 1px solid rgba(255,255,255,0.2);">Final Recommendation</div>', unsafe_allow_html=True)
-    
+
     # Extract data for clean display - handle both backend and UI formats
     model_name = winner.get("model_name", "Unknown Model")
-    
+
     # Get hardware config - backend returns gpu_config object
     gpu_config = winner.get("gpu_config", {}) or {}
     hardware = gpu_config.get("gpu_type", winner.get("hardware", "H100"))
     hw_count = gpu_config.get("gpu_count", winner.get("hardware_count", 1))
     tp = gpu_config.get("tensor_parallel", 1)
     replicas = gpu_config.get("replicas", 1)
-    
+
     # Get final score - backend uses balanced_score in scores
     backend_scores = winner.get("scores", {}) or {}
     final_score = backend_scores.get("balanced_score", winner.get("final_score", 0))
     quality_score = breakdown.get("quality_score", 0)
-    
+
     # Get SLO data - backend returns predicted_* fields directly on winner
     # Try backend format first (predicted_ttft_p95_ms), then benchmark_slo format
     ttft_p95 = winner.get("predicted_ttft_p95_ms", 0)
     itl_p95 = winner.get("predicted_itl_p95_ms", 0)
     e2e_p95 = winner.get("predicted_e2e_p95_ms", 0)
     throughput_qps = winner.get("predicted_throughput_qps", 0)
-    
+
     # Fallback to benchmark_slo if backend fields empty
     if not ttft_p95:
         benchmark_slo = winner.get("benchmark_slo", {})
@@ -6371,23 +6369,23 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
         itl_p95 = slo_actual.get("itl_p95_ms", slo_actual.get("itl_mean_ms", 0))
         e2e_p95 = slo_actual.get("e2e_p95_ms", slo_actual.get("e2e_mean_ms", 0))
         throughput_qps = throughput_data.get("tokens_per_sec", 0) / 100 if throughput_data.get("tokens_per_sec") else 0
-    
+
     # Format for display
     ttft_display = f"{int(ttft_p95)}" if ttft_p95 and ttft_p95 > 0 else "—"
     itl_display = f"{int(itl_p95)}" if itl_p95 and itl_p95 > 0 else "—"
     e2e_display = f"{int(e2e_p95)}" if e2e_p95 and e2e_p95 > 0 else "—"
     max_rps = f"{throughput_qps:.1f}" if throughput_qps and throughput_qps > 0 else "—"
-    
+
     # Schema-aligned recommendation box - Build HTML without comments
     # All models now have benchmark data (filtered to valid models only)
     benchmark_status = "<strong style='color: #10b981;'>Verified</strong> - Real benchmark data"
     priority_text = priority.replace('_', ' ').title()
-    
+
     # Build hardware display text
     hw_display = f"{hw_count}x {hardware}"
     if tp > 1 and replicas > 1:
         hw_display += f" (TP={tp}, R={replicas})"
-    
+
     rec_html = f'''<div style="background: #1a1a2e; padding: 2rem; border-radius: 1.25rem; border: 2px solid rgba(16, 185, 129, 0.4); margin-bottom: 1.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid rgba(16, 185, 129, 0.3);">
         <span style="font-size: 2.5rem;"></span>
@@ -6438,12 +6436,12 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             </div>
         </div>
 </div>'''
-    
+
     st.markdown(rec_html, unsafe_allow_html=True)
-    
+
     st.markdown("---")
     st.markdown('<div class="section-header" style="background: #1a1a1a; border: 1px solid rgba(255,255,255,0.2);">Winner Details: Score Breakdown</div>', unsafe_allow_html=True)
-    
+
     # Add explanation for the score notation - golden styled
     st.markdown("""
     <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(166, 124, 0, 0.05)); padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border-left: 4px solid #D4AF37;">
@@ -6452,12 +6450,12 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     col1, col2 = st.columns([3, 2])
-    
+
     with col1:
         st.markdown(f'<h3 style="color: white; font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; background: linear-gradient(135deg, #D4AF37, #F4E4BA, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);">{winner.get("model_name", "Unknown")}</h3>', unsafe_allow_html=True)
-        
+
         # Get weights based on priority
         priority_weights = {
             "balanced": {"accuracy": 0.30, "latency": 0.30, "cost": 0.25, "capacity": 0.15},
@@ -6467,30 +6465,30 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             "high_throughput": {"accuracy": 0.15, "latency": 0.15, "cost": 0.15, "capacity": 0.55},
         }
         weights = priority_weights.get(priority, priority_weights["balanced"])
-        
+
         # Calculate contributions
         q_score = breakdown.get("quality_score", 0)
         l_score = breakdown.get("latency_score", 0)
         c_score = breakdown.get("cost_score", 0)
         cap_score = breakdown.get("capacity_score", 0)
-        
+
         q_contrib = q_score * weights["accuracy"]
         l_contrib = l_score * weights["latency"]
         c_contrib = c_score * weights["cost"]
         cap_contrib = cap_score * weights["capacity"]
-        
+
         render_score_bar("Accuracy", "", q_score, "score-bar-accuracy", q_contrib)
         render_score_bar("Latency", "", l_score, "score-bar-latency", l_contrib)
         render_score_bar("Cost", "", c_score, "score-bar-cost", c_contrib)
         render_score_bar("Capacity", "", cap_score, "score-bar-capacity", cap_contrib)
-    
+
     with col2:
         st.markdown('<h3 style="color: white;">Why This Model?</h3>', unsafe_allow_html=True)
-        
+
         # Get use case from extraction context for use-case-specific summary
         use_case = extraction.get('use_case', 'chatbot_conversational')
         model_name = winner.get('model_name', 'Unknown')
-        
+
         # Use-case specific model summaries
         use_case_context = {
             "code_completion": f"excels at real-time code suggestions with fast TTFT, ideal for IDE integrations where developer productivity depends on instant completions",
@@ -6503,7 +6501,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             "long_document_summarization": f"handles long-context documents (10K+ tokens) with comprehensive summarization maintaining narrative flow",
             "research_legal_analysis": f"provides thorough analysis for legal and research documents requiring high accuracy and nuanced understanding",
         }
-        
+
         # Model-specific traits
         model_traits = {
             "deepseek": "Known for exceptional coding and math performance at lower cost.",
@@ -6516,7 +6514,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             "phi": "Microsoft's compact model for edge deployment.",
             "gpt-oss": "Open-source model benchmarked on diverse tasks.",
         }
-        
+
         # Build use-case specific summary
         use_case_desc = use_case_context.get(use_case, "optimized for your specific task requirements")
         model_trait = ""
@@ -6524,28 +6522,28 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             if key.lower() in model_name.lower():
                 model_trait = trait
                 break
-        
+
         summary = f"<strong>{model_name}</strong> {use_case_desc}."
         if model_trait:
             summary += f"<br><br><em>{model_trait}</em>"
-        
+
         # Display model summary
         st.markdown(f"""
         <div style="background: linear-gradient(135deg, rgba(56, 239, 125, 0.1), rgba(102, 126, 234, 0.1)); padding: 1rem; border-radius: 0.75rem; margin-bottom: 1rem; border-left: 4px solid #38ef7d;">
             <p style="color: rgba(255,255,255,0.95); margin: 0; font-size: 0.95rem; line-height: 1.6;">{summary}</p>
         </div>
         """, unsafe_allow_html=True)
-        
+
         pros = winner.get("pros", ["Top Quality", "Fast Responses"])
         cons = winner.get("cons", [])
-        
+
         st.markdown('<p style="color: white; font-weight: 600; margin-bottom: 0.5rem;">Strengths:</p>', unsafe_allow_html=True)
         pros_html = '<div style="display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem;">'
         for pro in pros:
             pros_html += f'<span class="tag tag-pro">{pro}</span>'
         pros_html += '</div>'
         st.markdown(pros_html, unsafe_allow_html=True)
-        
+
         if cons:
             st.markdown('<p style="color: white; font-weight: 600; margin-bottom: 0.5rem;">Trade-offs:</p>', unsafe_allow_html=True)
             cons_html = '<div style="display: flex; flex-direction: column; gap: 0.4rem;">'
@@ -6553,35 +6551,35 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
                 cons_html += f'<span class="tag tag-con">{con}</span>'
             cons_html += '</div>'
             st.markdown(cons_html, unsafe_allow_html=True)
-        
+
         st.markdown('<hr style="border-color: rgba(212, 175, 55, 0.3); margin: 1rem 0;">', unsafe_allow_html=True)
         st.markdown(f"""
         <p style="color: white;"><strong style="color: #D4AF37;">Final Score:</strong> <code style="background: linear-gradient(135deg, #D4AF37, #F4E4BA); color: #1a1a2e; padding: 0.35rem 0.75rem; border-radius: 0.25rem; font-weight: 700; font-size: 1.1rem;">{winner.get('final_score', 0):.1f}/100</code></p>
         <p style="color: rgba(212, 175, 55, 0.8); font-style: italic;">Based on {priority.replace('_', ' ').title()} priority weighting</p>
         """, unsafe_allow_html=True)
-    
+
     # Display benchmark SLO data - use backend fields or benchmark_slo
     # Get predicted values from backend OR from benchmark_slo
     benchmark_slo = winner.get("benchmark_slo", {}) or {}
     gpu_config = winner.get("gpu_config", {}) or {}
-    
+
     # Get SLO values - prioritize backend's predicted_* fields, fallback to benchmark_slo
     ttft_p95_val = winner.get("predicted_ttft_p95_ms") or benchmark_slo.get("slo_actual", {}).get("ttft_p95_ms", 0)
     itl_p95_val = winner.get("predicted_itl_p95_ms") or benchmark_slo.get("slo_actual", {}).get("itl_p95_ms", 0)
     e2e_p95_val = winner.get("predicted_e2e_p95_ms") or benchmark_slo.get("slo_actual", {}).get("e2e_p95_ms", 0)
     throughput_qps_val = winner.get("predicted_throughput_qps") or (benchmark_slo.get("throughput", {}).get("tokens_per_sec", 0) / 100 if benchmark_slo.get("throughput", {}).get("tokens_per_sec") else 0)
-    
+
     # Get traffic profile from winner or result
     traffic_profile = winner.get("traffic_profile", {}) or {}
     prompt_tokens_val = traffic_profile.get("prompt_tokens", benchmark_slo.get("token_config", {}).get("prompt", 512))
     output_tokens_val = traffic_profile.get("output_tokens", benchmark_slo.get("token_config", {}).get("output", 256))
-    
+
     # Get hardware info
     hw_type_val = gpu_config.get("gpu_type", benchmark_slo.get("hardware", "H100"))
     hw_count_val = gpu_config.get("gpu_count", benchmark_slo.get("hardware_count", 1))
     tp_val = gpu_config.get("tensor_parallel", 1)
     replicas_val = gpu_config.get("replicas", 1)
-    
+
     # Show benchmark box if we have any SLO data
     if ttft_p95_val or itl_p95_val or e2e_p95_val:
         st.markdown("---")
@@ -6590,32 +6588,32 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
             Real Benchmark SLOs (Actual Achievable Performance)
         </div>
         """, unsafe_allow_html=True)
-        
+
         st.markdown(f"""
         <div style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(16, 185, 129, 0.05)); padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border-left: 4px solid #6366f1;">
             <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9rem;">
                 <strong style="color: #6366f1;">Benchmarks:</strong> Real measured values from vLLM simulation.
-                Hardware: <strong style="color: #10b981;">{hw_count_val}x {hw_type_val}</strong> | 
+                Hardware: <strong style="color: #10b981;">{hw_count_val}x {hw_type_val}</strong> |
                 Token Config: <strong style="color: #f59e0b;">{prompt_tokens_val}→{output_tokens_val}</strong>
             </p>
         </div>
         """, unsafe_allow_html=True)
-        
+
         # Use the values we already extracted
         slo_actual = benchmark_slo.get("slo_actual", {})
         throughput = benchmark_slo.get("throughput", {})
         token_config = benchmark_slo.get("token_config", {})
         hardware = hw_type_val
         hw_count = hw_count_val
-        
+
         col1, col2, col3 = st.columns(3)
-        
+
         # Use our extracted values with fallback to slo_actual
         ttft_p95_show = ttft_p95_val or slo_actual.get('ttft_p95_ms', 0)
         itl_p95_show = itl_p95_val or slo_actual.get('itl_p95_ms', 0)
         e2e_p95_show = e2e_p95_val or slo_actual.get('e2e_p95_ms', 0)
         tps_show = throughput_qps_val * 100 if throughput_qps_val else throughput.get('tokens_per_sec', 0)
-        
+
         with col1:
             st.markdown(f"""
             <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid rgba(99, 102, 241, 0.3);">
@@ -6629,7 +6627,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
                 </div>
             </div>
             """, unsafe_allow_html=True)
-        
+
         with col2:
             st.markdown(f"""
             <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid rgba(16, 185, 129, 0.3);">
@@ -6643,7 +6641,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
                 </div>
             </div>
             """, unsafe_allow_html=True)
-        
+
         with col3:
             st.markdown(f"""
             <div style="background: var(--bg-card); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid rgba(245, 158, 11, 0.3);">
@@ -6657,7 +6655,7 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
                 </div>
             </div>
             """, unsafe_allow_html=True)
-        
+
         # Throughput and Config row
         st.markdown(f"""
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem;">
@@ -6677,10 +6675,10 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
                 <p style="color: #f472b6; font-weight: 700; font-size: 1rem; margin: 0;">{prompt_tokens_val} → {output_tokens_val}</p>
             </div>
         </div>
-        
+
         <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(16, 185, 129, 0.08); border-radius: 0.5rem; border: 1px solid rgba(16, 185, 129, 0.2);">
             <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.8rem; text-align: center;">
-                <strong style="color: #10b981;">Data Source:</strong> vLLM Simulation Benchmarks | 
+                <strong style="color: #10b981;">Data Source:</strong> vLLM Simulation Benchmarks |
                 <strong style="color: #6366f1;">Model:</strong> {winner.get('model_name', 'Unknown')}
             </p>
         </div>
@@ -6692,24 +6690,24 @@ def _render_winner_details(winner: dict, priority: str, extraction: dict):
 def render_catalog_tab(models_df: pd.DataFrame):
     """Model catalog browser - shows ALL columns from the CSV."""
     st.markdown('<div class="section-header" style="background: #1a1a1a; border: 1px solid rgba(255,255,255,0.2);">Red Hat Benchmarked Model Catalog</div>', unsafe_allow_html=True)
-    
+
     # Short project description
     st.markdown("""
     <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(56, 239, 125, 0.05)); padding: 1rem 1.5rem; border-radius: 1rem; margin-bottom: 1.5rem; border: 1px solid rgba(102, 126, 234, 0.2);">
         <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem; line-height: 1.6;">
-            <strong style="color: #D4AF37;">Model Database:</strong> Complete performance data from <strong>Red Hat Performance DB</strong> + accuracy scores from <strong>Artificial Analysis</strong> covering 
-            <span style="color: #38ef7d; font-weight: 700;">50 benchmarked models</span> with 
-            <span style="color: #667eea; font-weight: 700;">50 models having accuracy scores</span> across 
+            <strong style="color: #D4AF37;">Model Database:</strong> Complete performance data from <strong>Red Hat Performance DB</strong> + accuracy scores from <strong>Artificial Analysis</strong> covering
+            <span style="color: #38ef7d; font-weight: 700;">50 benchmarked models</span> with
+            <span style="color: #667eea; font-weight: 700;">50 models having accuracy scores</span> across
             <span style="color: #a371f7; font-weight: 700;">15 benchmark datasets</span> including MMLU-Pro, GPQA, IFBench, LiveCodeBench, AIME, Math-500, and more.
             Filter and search to find the perfect model for your use case.
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     if models_df.empty:
         st.warning("Could not load model catalog")
         return
-    
+
     # Custom CSS for catalog tab
     st.markdown("""
     <style>
@@ -6732,37 +6730,37 @@ def render_catalog_tab(models_df: pd.DataFrame):
         }
     </style>
     """, unsafe_allow_html=True)
-    
+
     col1, col2 = st.columns(2)
     with col1:
         providers = sorted(models_df['Provider'].dropna().unique())
         selected = st.multiselect("Filter by Provider", providers)
     with col2:
         search = st.text_input("Search Models", placeholder="e.g., Llama, Qwen, DeepSeek...")
-    
+
     filtered = models_df.copy()
     if selected:
         filtered = filtered[filtered['Provider'].isin(selected)]
     if search:
         filtered = filtered[filtered['Model Name'].str.contains(search, case=False, na=False)]
-    
+
     is_filtered = bool(selected or search)
     total_count = len(models_df)
     shown_count = len(filtered) if is_filtered else total_count
-    
+
     st.markdown(f'<p style="color: white; font-size: 1.1rem;">Showing <strong style="color: #EE0000;">{shown_count}</strong> of <strong style="color: #EE0000;">{total_count}</strong> models</p>', unsafe_allow_html=True)
-    
+
     # Show ALL columns from the CSV
-    all_benchmark_cols = ['mmlu_pro', 'gpqa', 'ifbench', 'livecodebench', 'aime', 'aime_25', 
-                          'math_500', 'artificial_analysis_intelligence_index', 
+    all_benchmark_cols = ['mmlu_pro', 'gpqa', 'ifbench', 'livecodebench', 'aime', 'aime_25',
+                          'math_500', 'artificial_analysis_intelligence_index',
                           'artificial_analysis_coding_index', 'artificial_analysis_math_index',
                           'lcr', 'tau2', 'scicode', 'hle', 'terminalbench_hard']
-    
+
     # Core columns + all available benchmarks
     display_cols = ['Model Name', 'Provider'] + [c for c in all_benchmark_cols if c in filtered.columns]
     available = [c for c in display_cols if c in filtered.columns]
     display_df = filtered[available].copy()
-    
+
     # Sort by mmlu_pro descending
     if 'mmlu_pro' in display_df.columns:
         def parse_pct(x):
@@ -6774,13 +6772,13 @@ def render_catalog_tab(models_df: pd.DataFrame):
         display_df['_sort'] = display_df['mmlu_pro'].apply(parse_pct)
         display_df = display_df.sort_values('_sort', ascending=False)
         display_df = display_df.drop(columns=['_sort'])
-    
+
     # Column icons for better readability
     column_icons = {
         'Model Name': '🤖 Model',
         'Provider': 'Provider',
         'mmlu_pro': 'MMLU-Pro',
-        'gpqa': 'GPQA', 
+        'gpqa': 'GPQA',
         'ifbench': 'IFBench',
         'livecodebench': '💻 LiveCode',
         'aime': 'AIME',
@@ -6796,9 +6794,9 @@ def render_catalog_tab(models_df: pd.DataFrame):
         'terminalbench_hard': 'Terminal'
     }
     display_df = display_df.rename(columns={k: v for k, v in column_icons.items() if k in display_df.columns})
-    
+
     st.dataframe(display_df.head(100), use_container_width=True, hide_index=True, height=500)
-    
+
     # Artificial Analysis-style Benchmark Leaderboards
     st.markdown("""
     <div style="margin-top: 2rem;">
@@ -6806,10 +6804,10 @@ def render_catalog_tab(models_df: pd.DataFrame):
         <p style="color: #9ca3af; font-size: 0.9rem; margin-bottom: 1.5rem;">Research-grade benchmarks across various domains — Data from <strong style="color: #a855f7;">Artificial Analysis</strong></p>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # Create two columns for benchmark charts (like Artificial Analysis layout)
     bench_col1, bench_col2 = st.columns(2)
-    
+
     # Helper function to create AA-style bar chart
     def create_benchmark_chart(df, col_name, title, color_scale):
         if col_name not in df.columns:
@@ -6817,7 +6815,7 @@ def render_catalog_tab(models_df: pd.DataFrame):
         chart_df = df[['Model Name', col_name]].dropna().head(15)
         if chart_df.empty:
             return None
-        
+
         # Parse percentage values
         def parse_val(x):
             if pd.isna(x) or x == 'N/A':
@@ -6825,10 +6823,10 @@ def render_catalog_tab(models_df: pd.DataFrame):
             if isinstance(x, str):
                 return float(x.replace('%', '')) if '%' in x else float(x) * 100
             return float(x) * 100 if float(x) <= 1 else float(x)
-        
+
         chart_df['score'] = chart_df[col_name].apply(parse_val)
         chart_df = chart_df.sort_values('score', ascending=True).tail(12)
-        
+
         fig = px.bar(
             chart_df,
             x='score',
@@ -6852,36 +6850,36 @@ def render_catalog_tab(models_df: pd.DataFrame):
         )
         fig.update_traces(textposition='outside', textfont_size=10, textfont_color='white')
         return fig
-    
+
     with bench_col1:
         # MMLU-Pro Chart
         fig = create_benchmark_chart(models_df, 'mmlu_pro', 'MMLU-Pro (Knowledge)', ['#3b82f6', '#1d4ed8', '#1e40af'])
         if fig:
             st.plotly_chart(fig, use_container_width=True, key="mmlu_chart")
-        
+
         # LiveCodeBench Chart
         fig = create_benchmark_chart(models_df, 'livecodebench', '💻 LiveCodeBench (Coding)', ['#10b981', '#059669', '#047857'])
         if fig:
             st.plotly_chart(fig, use_container_width=True, key="code_chart")
-    
+
     with bench_col2:
         # GPQA Chart
         fig = create_benchmark_chart(models_df, 'gpqa', 'GPQA Diamond (Science)', ['#8b5cf6', '#7c3aed', '#6d28d9'])
         if fig:
             st.plotly_chart(fig, use_container_width=True, key="gpqa_chart")
-        
+
         # IFBench Chart
         fig = create_benchmark_chart(models_df, 'ifbench', 'IFBench (Instruction Following)', ['#f59e0b', '#d97706', '#b45309'])
         if fig:
             st.plotly_chart(fig, use_container_width=True, key="if_chart")
-    
+
     # Provider Chart with custom colors
     st.markdown('<h4 style="color: white; margin-top: 2rem;">Models by Provider</h4>', unsafe_allow_html=True)
     counts = models_df['Provider'].value_counts().head(10)
-    
+
     # Create a colored bar chart using plotly for better visibility
     fig = px.bar(
-        x=counts.index, 
+        x=counts.index,
         y=counts.values,
         color=counts.values,
         color_continuous_scale=['#667eea', '#764ba2', '#f093fb', '#38ef7d'],
@@ -6904,11 +6902,11 @@ def render_catalog_tab(models_df: pd.DataFrame):
 def render_how_it_works_tab():
     """Documentation tab with collapsible sections."""
     st.markdown('<div class="section-header" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(212, 175, 55, 0.1));">How It Works</div>', unsafe_allow_html=True)
-    
+
     # Collapsible pipeline section
     with st.expander("**E2E Pipeline Visualization** - Click to expand", expanded=False):
         render_pipeline()
-    
+
     # Styled tables for visibility on dark background
     st.markdown("""
     <style>
@@ -6919,7 +6917,7 @@ def render_how_it_works_tab():
         .doc-section { color: white; font-size: 1.5rem; font-weight: 700; margin: 2rem 0 1rem 0; }
         .doc-formula { background: rgba(102, 126, 234, 0.2); color: #38ef7d; padding: 1rem; border-radius: 0.5rem; font-family: monospace; margin: 1rem 0; }
     </style>
-    
+
     <div class="doc-section" style="color: #EE0000;">Supported Use Cases (9 Total)</div>
     <table class="doc-table">
         <tr><th>Use Case</th><th>Description</th><th>Key Benchmarks</th><th>Typical SLO</th></tr>
@@ -6933,10 +6931,10 @@ def render_how_it_works_tab():
         <tr><td>Content Generation</td><td>Creative writing, marketing content</td><td>IFBench, MMLU</td><td>TTFT &lt; 300ms</td></tr>
         <tr><td>Legal/Research Analysis</td><td>Complex legal & research document analysis</td><td>GPQA, MMLU</td><td>Quality &gt; Speed</td></tr>
     </table>
-    
+
     <div class="doc-section" style="color: #EE0000;">MCDM Scoring Formula</div>
     <div class="doc-formula">FINAL_SCORE = w_accuracy × Accuracy + w_latency × Latency + w_cost × Cost + w_capacity × Capacity</div>
-    
+
     <p style="color: white; font-weight: 600; margin: 1rem 0;">Priority-based weight adjustment:</p>
     <table class="doc-table">
         <tr><th>Priority</th><th>Accuracy</th><th>Latency</th><th>Cost</th><th>Capacity</th></tr>
@@ -6946,7 +6944,7 @@ def render_how_it_works_tab():
         <tr><td>High Accuracy</td><td style="color: #EE0000; font-weight: 700;">50%</td><td>20%</td><td>15%</td><td>15%</td></tr>
         <tr><td>High Throughput</td><td>20%</td><td>15%</td><td>15%</td><td style="color: #EE0000; font-weight: 700;">50%</td></tr>
     </table>
-    
+
     <div class="doc-section" style="color: #EE0000;">How Factors Affect Scoring</div>
     <table class="doc-table">
         <tr><th>Factor</th><th>Impact on Recommendation</th><th>Example</th></tr>
@@ -6955,10 +6953,10 @@ def render_how_it_works_tab():
         <tr><td><strong>Hardware</strong></td><td>GPU type affects Cost & Throughput calculations. <span style="color: #EE0000;">Premium GPUs enable larger models.</span></td><td>H100 → Can run 70B+ models efficiently</td></tr>
         <tr><td><strong>Priority</strong></td><td>Dynamically shifts MCDM weight distribution. <span style="color: #EE0000;">Your priority becomes the dominant factor (45-50%).</span></td><td>"Cost Saving" → Cost weight = 50%</td></tr>
     </table>
-    
+
     <div class="doc-section" style="color: #EE0000;">Use-Case Accuracy Scoring</div>
     <p style="color: rgba(255,255,255,0.9); line-height: 1.8; margin-bottom: 1rem;">
-        Each use case has a dedicated <strong style="color: #EE0000;">Weighted Scores CSV</strong> (e.g., <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 0.25rem;">opensource_chatbot_conversational.csv</code>) 
+        Each use case has a dedicated <strong style="color: #EE0000;">Weighted Scores CSV</strong> (e.g., <code style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 0.25rem;">opensource_chatbot_conversational.csv</code>)
         that ranks all 206 models based on relevant benchmarks for that task:
     </p>
     <table class="doc-table">
